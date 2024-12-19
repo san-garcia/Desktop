@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agregar datos a Firebase</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script>
+    // Initialize Firebase
+    const firebaseConfig = {
+      databaseURL: "https://proyectoprueba-b9041-default-rtdb.europe-west1.firebasedatabase.app"
+    };
+    const app = firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+
+      function meter(){
+        const name = "Alejandr";
+        const email = "correo1";
+        const usersRef = database.ref('users');
+        usersRef.push({
+        name: name,
+        email: email
+        });
+      }
+  </script>
+</head>
+<body>
+  <h1>Agregar datos a Firebase</h1>
+  <button onclick="meter()">Incluir</button>
+</body>
+</html>

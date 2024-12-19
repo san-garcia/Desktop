@@ -1,0 +1,249 @@
+html, body, nav {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-image: url("img/catalogo.jpg");
+    height: 24%;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;  
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu ul.active {
+    display: block; 
+}
+
+.menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    display: block;
+}
+
+.menu ul li:hover {
+    background-color: #f1e9e9ba;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+#inicio {
+    position: relative;
+    background-image: url('img/rebajas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 113, 113, 0.895); 
+    z-index: 1;
+}
+
+#inicio h1, #inicio p {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    z-index: 2; 
+}
+
+#productos h2, #productos figcaption {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+#rebajas h2, #rebajas figcaption {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+#boton-luz {
+    color: rgb(186, 179, 179);
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid rgb(186, 179, 179);
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 0 5px white, 0 0 25px white;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+#boton-luz:hover {
+    box-shadow: 0 0 5px rgb(34, 34, 34), 0 0 25px rgb(34, 34, 34);
+}
+
+#titulo {
+    position: relative;
+    background-image: url('img/artistas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 0;
+    text-align: center;
+}
+
+#titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(113, 216, 223, 0.895); 
+    z-index: 1;
+}
+
+#titulo h1, #inicio p {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    z-index: 2; 
+}
+
+#artistas h3 {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-align: center;
+    z-index: 2; 
+}
+
+#artistas figcaption {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+#sesion {
+    position: relative;
+    background-image: url('img/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 0;
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+figure {
+    width: calc(33.333% - 20px); 
+    text-align: center;
+}
+
+figure img {
+    width: 100%; 
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    figure {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    figure {
+        width: 100%; 
+    }
+}
+
+footer {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.register, .login {
+    width: 300px;
+}

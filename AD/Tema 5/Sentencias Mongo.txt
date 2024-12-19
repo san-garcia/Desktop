@@ -1,0 +1,84 @@
+para abrir mongodb:
+mongo 
+> (nos debe de salir esto de aquí)
+mostrar las bbdd de mongo:
+show databases;
+
+trabajar en una bbdd:
+use videoclub (si no existe la crea)
+
+para ver las colecciones:
+show collections
+
+para saber la bbdd en la que estoy trabajando:
+db
+
+añadir objetos a una colección:
+db.peliculas.save({estructura:JSON});
+si no existe la coleccion la creara
+
+contar
+db.peliculas.count();
+
+listar todos los documentos de la colección peliculas:
+db.peliculas.find();
+
+borrar los datos de una colección:
+db.peliculas.remove({});
+{} -> esto hará que elimine todos los datos
+
+borrar una colección:
+db.peliculas.drop();
+nos saldrá true
+
+borrar una bbdd:
+db.dropDatabase();
+
+18/12/2024
+mongoimport es un comando de cmd que va icludio en java c que es un ejecutbale que hay dentro de la carpeta de mongo, pero NO es una sentencia de mongo
+
+
+cambiar la paginación de la consola
+DBQuery.shellBatchSize = 100; -> establecemos el valor a 100
+
+filtramos la info para saber lo que nosotros queramos
+db.peliculas.find({},{codpelicula:1, titulo:1})
+
+con cls borramos la consola
+cls
+
+para meter una condición (CUIDADO) 
+db.peliculas.find({debera de ir aquí métido la CONDICION},{codpelicula:1, titulo:1})
+Ejemplo 1: que el precio sea igual que dos euros
+db.peliculas.find({precio:{$eq:2}},{codpelicula:1, precio:1, _id:0})
+
+Ejemplo 2: sacar las peliculas con duración menor o igual de 100 
+db.peliculas.find({duracion:{$lte:100}},{codpelicula:1, precio:1, _id:0})
+
+Ejemplo 3: Peliculas que no valgan dos euros
+db.peliculas.find({precio:{$ne:2}},{codpelicula:1, precio:1, _id:0})
+
+Ejemplo 4: Filtrar peliculas por tema es igual a Drama
+db.peliculas.find({tema:{$eq:"Drama"}},{codpelicula:1, precio:1, _id:0})
+
+Ejemplo 5: Filtrar que empiece la pelicula por la c  /^C/
+db.peliculas.find({titulo: /^C/},{titulo:1, tema:1, _id:0})
+
+Ejemplo 6: Filtrar que termine la pelicula por la a  /a$/
+db.peliculas.find({titulo: /a$/
+},{titulo:1, tema:1, _id:0})
+
+Ejemplo 7: que contenga la y /y/
+ db.peliculas.find({titulo: /y/},{titulo:1, tema:1, _id:0})
+
+
+Ejemplo 8: tema drama y precio mayor de 1€ 
+db.peliculas.find({$and:[{tema:{$eq:"Drama"}},{precio:{$gt:1}}]},{_id:0,codpelicula:0,duracion:0})
+
+Ejemplo 9: peliculas que empiecen por D o terminan en s
+db.peliculas.find( { $or: [ {titulo: /^D/ },{titulo: /s$/ } ] },{_id:0,titulo:1})
+
+
+Ejemplo 10: peliculas que no empiecen por D
+db.peliculas.find( { titulo: {$not:/^D/ } },{_id:0,titulo:1})
+

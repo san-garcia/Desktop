@@ -1,0 +1,51 @@
+// Tareas condicionales
+        // Evaluamos el valor de dia y del mes para saber en que estacion estamos
+        // Declaramos las variables que vamos a usar
+        val fecha = "02/10/2024"
+        var mes = fecha.subSequence(0,3).toString().toInt() // Cogemos del 0 al 3, ya que corresponde al dia y el mes
+
+        // Realizamos la condicion when
+        when (mes) {
+            1,2,3 -> print("\n Es invierno")
+            4,5,6 -> print("\n Es primavera")
+            7,8,9 -> print("\n Es verano")
+            10,11,12 -> print("\n Es otoño")
+        }
+
+        println("----------------------------------------")
+
+        // Dos ejemplos de if, simple y complejo
+        // Declaramos las variables
+        var nota : Boolean = false
+        var alumno = "Sandra"
+
+        // If simple
+        if (nota == true) alumno += " has aprobado, enhorabuena"
+        else alumno += " has suspendido, necesitas mejorar"
+
+        // If complejo
+        if(nota) {
+            println(alumno+" has aprobado, enhorabuena")
+        } else {
+            println(alumno+" has suspendido, necesitas mejorar")
+        }
+
+        println("----------------------------------------")
+
+        // Realizamos un when sabiendo que una nota se puede saber si esta aprobado y si es suficiente, bien o notable
+        // Declaramos la variable nota
+        var nota1 : Boolean = true
+        var nota2 : Int = 5
+        // Condicion if
+        if (nota1 == true) {
+            println("Has aprobado")
+            // Condicion when
+            when(nota2) {
+                1,2,3,4 -> print("\n Suspenso")
+                5, 6 -> print("\n Suficiente")
+                7, 8 -> print("\n Bien")
+                9, 10 -> print("\n Sobresaliente")
+            }
+        } else {
+            println("Has suspendido")
+        }

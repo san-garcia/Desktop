@@ -1,0 +1,93 @@
+1. Películas cuyo título empieza por C
+db.peliculas.find({titulo:/^C/}, {_id:0, titulo:1})
+8
+2. Películas de Tema Aventuras.
+db.peliculas.find({tema:{$eq:"Aventuras"}},{tema:1, _id:0}).count()
+14
+
+3. Películas cuyo Precio es de 1 €.
+db.peliculas.find({precio:{$eq:1}},{precio:1, _id:0}).count()
+14
+
+4. Películas cuyo precio no es de 3 €
+db.peliculas.find( { precio: {$not:{$eq:3}} },{_id:0,precio:1}).count()
+30
+
+5.Películas con duración superior a 100 minutos.
+db.peliculas.find( { duracion:{$gt:100}},{_id:0,duracion:1}).count()
+40
+
+6. Películas con duración inferior a 110 minutos.
+db.peliculas.find( { duracion:{$lt:110}},{_id:0,duracion:1}).count()
+20
+
+7. Películas con duración superior a 100 e inferior a 120 minutos.
+db.peliculas.find( { $and:[{duracion:{$gt:100}},{duracion:{$lt:120}}]},{_id:0,duracion:1}).count()
+23
+
+8. Películas cuyo título empieza por C y son Comedia.
+db.peliculas.find( { $and:[{ titulo:/^C/}, {tema:{$eq:"Comedia"}}]}, {_id:0, titulo:1}).count()
+2
+
+9. Películas cuyo tema sea Drama que cuesten 2 €.
+db.peliculas.find( { $and:[{ precio:{$eq:2}}, {tema:{$eq:"Drama"}}]}, {_id:0, titulo:1}).count()
+3
+
+10. Películas cuyo tema sea Aventuras que cuesten 3 €
+db.peliculas.find( { $and:[{ precio:{$eq:3}}, {tema:{$eq:"Aventuras"}}]}, {_id:0, titulo:1}).count()
+6
+
+11. Películas cuyo tema sea Aventuras o Dramas.
+db.peliculas.find( { $or:[{ tema:{$eq:"Drama"}}, {tema:{$eq:"Aventuras"}}]}, {_id:0, titulo:1}).count()
+29
+
+12. Dramas cuyo título comienza por C.
+db.peliculas.find( { $and:[{ titulo:/^C/}, {tema:{$eq:"Dramas"}}]}, {_id:0, titulo:1}).count()
+4
+
+13. Películas cuyo título contiene la palabra de
+db.peliculas.find({ titulo:/de/ }, {_id:0, titulo:1}).count()
+15
+
+14. Películas que el título empieza por la letra A
+db.peliculas.find({ titulo:/^A/ }, {_id:0, titulo:1}).count()
+2
+
+15. Películas que el título termina por la letra S
+db.peliculas.find({ titulo:/s$/ }, {_id:0, titulo:1}).count()
+9
+
+16. Socios cuyo apellido comienza por G
+db.socios.find({ apellido:/^G/},{}).count()
+2
+
+17. Socios que viven en Valencia
+db.socios.find({ poblacion:{$eq:"Valencia"}},{}).count()
+4
+
+18. Socios que viven en Valencia o Xátiva
+db.socios.find( { $or:[{ poblacion:{$eq:"Valencia"}}, {poblacion:{$eq:"Xátiva"}}]}, {}).count()
+6
+
+19. Socios que viven en Valencia y cuyo apellido comienza por L
+db.socios.find( { $and:[{ poblacion:{$eq:"Valencia"}}, {apellidos:/^L/}]}, {}).count()
+1
+
+20. Socios cuya dirección comienza por C
+db.socios.find({ direccion:/^C/},{}).count()
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

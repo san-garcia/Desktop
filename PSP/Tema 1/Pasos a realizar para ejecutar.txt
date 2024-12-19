@@ -1,0 +1,12 @@
+1.- Comentar la línea 1 (package) de cada proyecto
+2.- Guardar los cambios en ambos proyectos
+3.- Creamos una carpeta vacia (Por ejemplo: ejercicio)
+4.- Copias de la carpeta src de los proyecto ambos 
+ficheros .java a la carpeta ejercicio.
+5.- Abrir cmd en la carpeta donde 
+tenemos los .java (ejercicio)
+6.- Compilamos ambos proyectos con javac dentro de la
+carpeta ejercicio. Comprobamos con dir que tenemos los
+.class
+7. Ejecutamos el programa que llama al programa 
+secundario con java xxxxxxxxxx

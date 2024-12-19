@@ -1,0 +1,130 @@
+//val fecha = "19/9/2024"
+        /*var nombre: String = "Sandra"
+        var saldo: Float = 300.54f
+        var sueldo = 764.82f
+        //var vip:Boolean = false
+        var inicial: Char = 'S'
+        var Saludo = "Hola " + nombre + " cobras " + sueldo.toString() + " rublos"
+        println(Saludo)
+
+        var dato: Int = 4
+        println(dato)
+        println(++dato) // incrementa antes de mostrarlo
+        println(dato)
+        println(dato++)// lo muestra y lo incrementa despues
+
+
+        // Ejercicio 1
+        var sum1: Int = 1
+        var sum2: Int = 1
+        var suma = sum1 + sum2
+        println("La suma de los numeros " + sum1 + " y " + sum2 + " es " + suma)
+
+        // Ejercicio 2
+        var res1: Float = 200.55f
+        var res2: Float = 52.33f
+        var resta = res1 - res2
+        println("La resta de los numeros " + res1 + " y " + res2 + " es " + resta)
+
+        // Ejercicio 3
+        var mul1: Double = 5.2
+        var mul2: Double = 2.1
+        var multi = mul1 * mul2
+        println("La multiplicacion de los numeros " + mul1 + " y " + mul2 + " es " + multi)
+
+        // Ejercicio 4
+        var div1: Int = 20
+        var div2: Int = 5
+        var division = div1 / div2
+        println("La division de los numeros " + div1 + " y " + div2 + " es " + division)
+
+        // Ejercicio 5
+        var mod1: Int = 45
+        var mod2: Int = 23
+        var residuo = mod1 % mod2
+        println("El residuo de los numeros " + mod1 + " y " + mod2 + " es " + residuo)
+
+        // Ejercicio 6
+        println("Suma: " + suma + " resta: " + resta + " multiplicacion: " + multi + " division: " + division)
+
+        // Ejercicio 8
+        var dec: Int = 4
+        println("Numero: " + dec)
+        println("Incremento: ")
+        println(++dec)
+        println("Decremento: ")
+        println(dec++)
+
+        // Ejercicio 9
+        var val1: Int = 4
+        var val2: Int = 2
+        val1 += val2
+        println("Asignacion += " + val1)
+        val1 -= val2
+        println("Asignacion -= " + val1)
+        val1 *= val2
+        println("Asignacion *= " + val1)
+        val1 /= val2
+        println("Asignacion /= " + val1)
+
+        // Ejercicio 10
+        var numero: Int = 9
+        var numero2: Double = 3.3
+        println("Conversion entre un numero entero y uno double: " + numero.toDouble() / numero2)
+
+        // PMM 2/10/2024
+        //val date = "19/09/2024"
+        var vip: Boolean = true
+        var saludo = "Hola " + nombre
+
+        // If simple
+        if (vip == true) saludo += ", te queremos mucho"
+        else saludo += "quieres ser vip? pues paga la cuota"
+
+        var aprobado = true
+
+        // If complejo
+        if (aprobado) {
+            println("Aprobaste de milagro")
+        } else {
+            println("No das ni una, macho")
+        }
+        println("-------------------------")
+        println(saludo)*/
+
+        // If multiple
+        /*val fecha = "19/09/2024"
+        //  La primera posicion del texto será 0
+        var mes = fecha.subSequence(3, 5).toString()
+            .toInt()// Coge el valor del principio y el valor del final, le obligamos a demás que sea un string y lo pasamos a entero
+        // Es más fácil pasarlo a texto y luego lo pasamos a entero
+
+        // Esto sería como un switch case
+        when (mes) {
+            1, 2, 3 -> print("\n Es invierno")
+            4, 5, 6 -> print("\n Es primavera")
+            7, 8, 9 -> print("\n Es verano")
+            10, 11, 12 -> print("\n Es otoño")
+        }*/
+        
+        // Bucles 
+        /*println("--------------BUCLES------------------")
+        val pin: Int = 1234 // No cambiamos el pin
+        var intentos: Int = 0
+        var clave_ingresada: Int = 1232
+
+        do {
+            println("Clave ingresada: ${clave_ingresada++}")// Si ponemos un $ no hace concatenar
+            // Gracias a las llaves podemos hacer las operaciones dentro
+            intentos++
+            if (clave_ingresada == pin) break
+        } while (intentos < 3)
+
+        if (intentos == 3) println("Tarjeta bloqueada")*/
+
+
+
+
+
+
+

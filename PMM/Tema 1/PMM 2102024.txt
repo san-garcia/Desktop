@@ -1,0 +1,34 @@
+// PMM 2/10/2024
+        //val date = "19/09/2024"
+        var vip: Boolean = true
+        var saludo = "Hola " + nombre
+
+        // If simple
+        if (vip == true) saludo += ", te queremos mucho"
+        else saludo += "quieres ser vip? pues paga la cuota"
+
+        var aprobado = true
+
+        // If complejo
+        if (aprobado) {
+            println("Aprobaste de milagro")
+        } else {
+            println("No das ni una, macho")
+        }
+        println("-------------------------")
+        println(saludo)
+
+        // If multiple
+        val fecha = "19/09/2024"
+        //  La primera posicion del texto será 0
+        var mes = fecha.subSequence(3, 5).toString()
+            .toInt()// Coge el valor del principio y el valor del final, le obligamos a demás que sea un string y lo pasamos a entero
+        // Es más fácil pasarlo a texto y luego lo pasamos a entero
+
+        // Esto sería como un switch case
+        when (mes) {
+            1, 2, 3 -> print("\n Es invierno")
+            4, 5, 6 -> print("\n Es primavera")
+            7, 8, 9 -> print("\n Es verano")
+            10, 11, 12 -> print("\n Es otoño")
+        }

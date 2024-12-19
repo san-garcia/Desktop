@@ -1,0 +1,182 @@
+<html>
+<body>
+  <title>Tutorial Angular</title>
+<!--Centrar todo el contenido-->
+<div class="container">
+  <!--Encabezado-->
+  <h1>Pasos para la Instalación de Angular</h1>
+   
+  <!--Subtitulo-->
+  <h2 class="subtitulo">Guía definitiva</h2>
+   
+  <!--Menú-->
+  <ul>
+    <li><a href="https://angular.dev/"><img src="assets/img/Angular_logo.png" alt="Logo" class="logo"></a></li>
+    <li><a href="https://angular.dev/overview">Documentación</a></li>
+    <li><a href="https://angular.dev/tutorials">Tutoriales</a></li>
+    <li><a href="https://angular.lat/acerca">Comunidad</a></li>
+  </ul>
+   
+  <!--Pasos para la instalación-->
+  <h2>1. Instalación de node.js</h2>
+    <p>Es necesario descargar este archivo de instalación del sitio
+    oficial <a href="https://nodejs.org/en/" class="enlaceNode"><b>Node.js</b></a> pulsaremos al botón <b>Download Node.js</b>
+    y se nos iniciará la descarga.</p>
+    <img src="assets/img/descargaNode.jpg" alt="node.js" class="img">
+   
+    <p>Una vez descargado, lo abriremos y ejecutaremos el archvio <b>.msi</b>
+    comenzará el proceso de instalación.</p>
+    <img src="assets/img/instalacion.png" alt="node.js" class="img">
+   
+    <p>Hacemos doble clic en el archivo de instalación y ejecutamos. El instalador nos pedirá que aceptemos el acuerdo de licencia de Node.js.
+    Marcaremos la casilla de <b>Aceptar</b> y le daremos a Siguiente.</p>
+    <img src="assets/img/licencia.png" alt="node.js" class="img">
+   
+    <p>Seleccionaremos el destino donde deseamos instalar Node.js. De normal la ruta por defecto que no sales es esta <b>C:\Program Files\nodejs\</b>
+    pero si queremos poder cambiar de ruta sin problema. Una vez cambaido le daremos de nuevo a Siguiente.</p>
+    <img src="assets/img/ruta.png" alt="node.js" class="img">
+   
+   
+    <p>Lo siguiente que se nos muestra es las opciones de configuración personalizada. Si quieres una instalación estándar con las
+    características por defecto de Node.js, le damos a Siguiente. Sino es así, puedes darle a los botones desplegables y más tarde
+    darle a Siguiente una vez elegido lo que más te convenga.</p>
+    <img src="assets/img/configuracion.png" alt="node.js" class="img">
+   
+    <p>Node.js te ofrece opciones para instalar herramientas para módulos nativos. Si estás interesado en ellas, haz clic en la casilla 
+    para marcar tus preferencias, o haz clic en Siguiente para seguir con la opción predeterminada.</p>
+    <img src="assets/img/herramientas.png" alt="node.js" class="img">
+   
+    <p>Por último, le daremos al botón de instalar y en unos segundos o minutos nos mostrará que se ha instalado con éxito. Le daremos al botón
+    <b>Finalizar</b> para así, poder cerrar el instalador de Node.js</p>
+    <img src="assets/img/botonInstalar.png" alt="node.js" class="img">
+    <br>
+    <img src="assets/img/licencia.png" alt="node.js" class="img">
+   
+    <p>Si queremos comprobar la versión que nos hemos instalado, solo tenemos que abrir
+    nuestra cmd y escribir npm --version</p>
+   
+   
+    <h2>2. Abrir PowerShell como administrador</h2>
+    <p>Iremos a la búsqueda de Windows y escribiremos <b>PowerShell</b>, clicaremos ya sea Click derecho - Ejecutar como administrador o ya sea 
+    como se muestra en la imagen.</p>
+    <img src="assets/img/powershell.png" alt="node.js" class="img">
+     
+    <p>Escribiremos la siguiente sentencia <i>Get-ExecutionPolicy</i>, esto nos sirve para saber la politica de ejecución que tenemos 
+    actualmente en nuestro sistema.</p>
+    <img src="assets/img/politica.png" alt="node.js" class="consola">
+   
+    <p>Una vez dado al Enter, nos saldrá el siguiente mensaje <b>Restricted</b> esto nos quiere decir que no se permite ejecutar ningún script, 
+    pero no os preocupeis que esto tiene su solución.</p>
+    <img src="assets/img/infoPolitica.png" alt="node.js" class="consola">
+   
+    <p>Para ello, vamos a escribir <i>Set-ExecutionPolicy Unrestricted</i>, con esto cambiaremos la politica de ejecución para que así nos
+    permita la ejecución de todos los scripts, sin ninguna restricción.</p>
+    <img src="assets/img/cambiamosPolitica.png" alt="node.js" class="consola">
+   
+    <p>Después de pulsar Enter, se nos muestra una información que nos pregunta si estamos de acuerdo en cambiar esta politica, nosotros le 
+    daremos a la tecla <b>S</b>.</p>
+    <img src="assets/img/aceptacion.png" alt="node.js" class="consola">
+   
+    <p>Nos volverá a preguntar si queremos cambiar la directiva de ejecución. A nosotros nos interesa teclear a <b>Sí a todo</b> a la tecla
+    <b>O</b>.</p>
+    <img src="assets/img/siatodo.png" alt="node.js" class="consola">
+     
+    <br>
+    <h2>3. Abrir cmd</h2>
+    <p>Abrimos el cmd para realizar lo siguiente: </p>
+    <img src="assets/img/cmd.png" alt="node.js" class="img">
+   
+    <p>Escribiremos por consola la instalación de la version 17 de Angular que es la siguiente sentencia <i>npm install -g &#64;angular/cli&#64;17</i></p>
+    <img src="assets/img/instalacionAngular.png" alt="node.js" class="consola">
+   
+    <p>Se nos mostrará una barrita girando, esto significa que se nos está instalando.</p>
+    <img src="assets/img/procesandoInstalacion.png" alt="node.js" class="consola">
+   
+    <p>Acabado el proceso de la instalación de Angular, se nos muestra los paquetes instalados y los segundos que ha podido tardar en realizarlo.</p>
+   
+    <p>Además, si observais, ya nos indica que usemos un conmando para saber donde se encuentra la instalación.</p>
+    <img src="assets/img/descargaCompleta.png" alt="node.js" class="consola">
+   
+    <p>Lo ejecutamos y vemos donde se encuentra, en mi caso en mi Usuario de Windows.</p>
+    <img src="assets/img/fund.png" alt="node.js" class="consola">
+    <br>
+    <img src="assets/img/sitio.png" alt="node.js" class="consola">
+   
+    <p>Para la creación de nuestra aplicación, deberemos de crear <b>antes</b> un directorio, por ejemplo <i>misProyectos</i>.</p>
+    <img src="assets/img/creacionDirectorio.png" alt="node.js" class="consola">
+   
+    <p>Podemos comprobar que se ha creado correctamente con el comando <i>dir</i>.</p>
+    <img src="assets/img/dir.png" alt="node.js" class="consola">
+   
+    <p>Nos meteremos dentro del directorio creado, para poder crear desde ahí nuestra aplicación.</p>
+    <img src="assets/img/colocacionDirectorio.png" alt="node.js" class="consola">
+    <br>
+    <img src="assets/img/puestoDirectorio.png" alt="node.js" class="consola">
+   
+    <p>Para poder crear nuestra aplicacion, deberemos de escribir por consola <i>ng new mi-aplicacion</i>.</p>
+    <img src="assets/img/creacionAplicacion.png" alt="node.js" class="consola">
+   
+    <p>Antes de la intalación nos preguntará si estamos de acuerdo de compartir nuestros datos con Google. Esto es totalmente opción, 
+    podemos darle a la tecla <b>y</b> de aceptar o <b>n</b> de negar.</p>
+    <img src="assets/img/politicaSeguridad.png" alt="node.js" class="consola">
+   
+    <p>Nos preguntan cual hoja de estilos usamos, en mi caso elegí <b>css</b> porque de esta forma nos permite seprar la estructura del 
+    contenido de la presentación.</p>
+    <img src="assets/img/css.png" alt="node.js" class="consola">
+   
+    <p>De nuevo nos preguntará si queremos habilitar el server SSR, esto lo que hace es renderizar nuestra aplicación del lado del servidor.
+    Como esto nos interesa, le daremos a la tecla <b>y</b> de que estamos de acuerdo.</p>
+    <img src="assets/img/politicaSeguridad2.png" alt="node.js" class="consola">
+   
+    <p>Ahora se mostrará la creación de la aplicación: </p>
+    <img src="assets/img/creacionApp.png" alt="node.js" class="consola">
+   
+    <p>Una vez finalizada la creación de la aplicación, se nos debe de mostrar algo así:</p>
+    <img src="assets/img/finalizacionApp.png" alt="node.js" class="consola">
+   
+    <p class="textoImportante"><b>IMPORTANTE</b></p> 
+    <p>Si por alún casual la instalación no se ha completado
+    como esperabas, te recomiendo borrar todo y volver a instarlo</p>
+   
+    <p>Nos metemos dentro de la aplicación con el comando <i>cd</i> y el nombre
+    asignado a la aplicación.</p>
+    <img src="assets/img/enApp.png" alt="node.js" class="consola">
+   
+    <p>Una vez dentro, ejecutamos el siguiente comando para abrirlo
+    <i>ng serve -o</i>.</p>
+    <img src="assets/img/abrimosApp.png" alt="node.js" class="consola">
+   
+    <p>Nos vuelven a preguntar si estamos de acuerdo de compartir nuestros datos con Google. Esto es totalmente opción, podemos darle a la
+    tecla <b>y</b> de aceptar o <b>n</b> de negar.</p>
+    <img src="assets/img/politicaSeguridad3.png" alt="node.js" class="consola">
+   
+    <p>Se nos cargará el proceso.</p>
+    <img src="assets/img/abriendoApp.png" alt="node.js" class="consola">
+   
+    <p>Hasta que se nos abre el navegador con el contenido de la página, esto es totalmente modificable y lo podemos hacer a nuestro gusto.</p>
+    <img src="assets/img/inicioApp.png" alt="node.js" class="consola">
+   
+    <h2>4. Escribir el código en VS (Visual Studio)</h2>
+    <p>Abrimos Visual Studio.</p>
+    <img src="assets/img/vs.png" alt="node.js" class="consola">
+   
+    <p>Seleccionaremos la carpeta donde se encuentra nuestris proyectos, haciendo lo siguiente File - Open Folder...</p>
+    <img src="assets/img/selecionarCarpeta.png" alt="node.js" class="ajuste">
+   
+    <p>Nos dirigiremos a la ubicación donde tenemos el directorio que hemos creado, en mi caso <i>misProyectos</i>.</p>
+    <img src="assets/img/ubicacion.png" alt="node.js" class="consola">
+   
+    <p>Abierto el directorio, se nos muestra diferentes carpetas. Las que más nos interesa son SRC - APP y el HTML <i>app.component.html</i> y <i>app.component.css</i></p>
+    <img src="assets/img/codigoHTML.png" alt="node.js" class="consola">
+    <br>
+    <img src="assets/img/cssCodigo.png" alt="node.js" class="consola">
+   
+    <p>En <i>app.component.html</i> borraremos <b>todo</b> su contenido y colocaremos el codigo que nosotros queramos.</p>
+    <img src="assets/img/vacioHTML.png" alt="node.js" class="consola">
+   
+    <p class="footer">¡Hasta aquí la explicación, espero que os haya servido!</p>
+    <!--Gif de cucaracha bailando-->
+    <img src="assets/img/cucaracha-bailando.gif" alt="Cucaracha Bailando" class="img">
+  </div>
+</body>
+</html>
