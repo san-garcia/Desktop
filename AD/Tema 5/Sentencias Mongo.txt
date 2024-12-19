@@ -44,7 +44,7 @@ DBQuery.shellBatchSize = 100; -> establecemos el valor a 100
 filtramos la info para saber lo que nosotros queramos
 db.peliculas.find({},{codpelicula:1, titulo:1})
 
-con cls borramos la consola
+borramos la consola
 cls
 
 para meter una condición (CUIDADO) 
@@ -81,4 +81,44 @@ db.peliculas.find( { $or: [ {titulo: /^D/ },{titulo: /s$/ } ] },{_id:0,titulo:1}
 
 Ejemplo 10: peliculas que no empiecen por D
 db.peliculas.find( { titulo: {$not:/^D/ } },{_id:0,titulo:1})
+
+19/12/2024
+actualizar todas las peliculas de drama a terror
+db.peliculas.update({tema:"Drama"},{$set:{tema:"Terror"}},{multi:true});
+
+para ver los cambios que ha hecho 
+db.peliculas.find()
+
+aumentar las peliculas de aventuras en 5 min
+db.peliculas.update({tema:"Aventuras"},{$inc:{duracion:5}},{multi:true});
+
+aumentar las peliculas de más de 100 min el precio un 20%
+db.peliculas.update({duracion:{$gt:100}},{$mul:{precio:1.20}},{multi:true});
+
+actualizar la duración de las peliculas a 100 min y el precio a 5€si cumplen que el titulo comienza por D y son de Aventuras
+db.peliculas.update({$and:[{titulo:/^D/},{tema:"Aventuras"}]},{$set:{duracion:100,precio:5.0}},{multi:true});
+
+borrar la tabla
+db.peliculas.remove() -> con esto me cargo todos los documentos
+
+borrar la colección 
+db.peliculas.drop();
+
+para borra la que usamos 
+db.dropDatabase();
+
+borrar las peliculas con duración máxima de 100 min
+db.peliculas.remove({duracion:{$gt:100}});
+
+borrar las peliculas que comienzan por c o el tema es de terror
+db.peliculas.remove({$or:[{titulo:/^C/},{tema:"Terror"}]});
+
+
+Borrar todos los documentos 
+db.peliculas.remove({});
+
+borrar la colección 
+db.peliculas.drop();
+
+
 

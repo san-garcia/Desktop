@@ -1,0 +1,29 @@
+Actividad 5.
+1. Aumentar el precio de las películas de 1 € un 10%.
+db.peliculas.update({precio:1},{$mul:{precio:1.10}},{multi:true});
+14 
+
+2. Aumentar el precio de las películas de 2 € un 20%.
+db.peliculas.update({precio:2},{$mul:{precio:1.20}},{multi:true});
+16
+
+3. Aumentar el precio de las películas de 3 € un 30%.
+db.peliculas.update({precio:3},{$mul:{precio:1.30}},{multi:true});
+20
+
+4. Aumentar la duración de las películas 5 minutos.
+db.peliculas.update({},{$inc:{duracion:5}},{multi:true});
+50
+
+5. Actualizar las películas de Drama a Terror.
+db.peliculas.update({tema:"Drama"},{$set:{tema:"Terror"}},{multi:true});
+15
+
+6. Aumentar la duración superior a 110 minutos, en 20 minutos más.
+db.peliculas.update({duracion:{$gt:110}},{$inc:{duracion:20}},{multi:true});
+31
+
+7. Actualizar las películas de 1,10 € a 1 €.
+db.peliculas.update({precio:1.10},{$set:{precio:1}},{multi:true});
+14
+

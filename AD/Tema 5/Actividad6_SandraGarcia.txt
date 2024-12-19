@@ -1,0 +1,32 @@
+Actividad 6.
+1. Eliminar los socios de Gandía.
+db.socios.remove({poblacion:"Gandía"});
+2
+
+2. Eliminar las películas con código superior a 100 e inferior a 200.
+db.peliculas.remove({$and:[{codpelicula:{$gt:100}},{codpelicula:{$lt:200}}]});
+4
+
+3. Eliminar los socios cuyo nombre empiece por S.
+db.socios.remove({nombre:/^S/});
+2
+
+4. Eliminar los socios cuyos apellidos empiecen por P.
+db.socios.remove({apellidos:/^P/});
+1
+
+5. Eliminar los socios que no sean de Valencia.
+db.socios.remove({poblacion:{$not:{$eq:"Valencia"}}});
+2
+
+6. Eliminar las películas de tema Terror.
+db.peliculas.remove({tema:{$eq:"Terror"}});
+12
+
+7. Eliminar las películas con duración inferior a 100 minutos.
+db.peliculas.remove({duracion:{$lt:100}});
+2
+
+8. Eliminar las películas cuyo precio es 1 €.
+db.peliculas.remove({precio:1});
+6
