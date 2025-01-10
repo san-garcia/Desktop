@@ -1,0 +1,5 @@
+		// titulo comienza por P
+		Bson criterio = regex("titulo", "^P"); 
+        	// resultadoDocumentos almacena el resultado de la consulta
+        	MongoCursor<Document> resultadoDocumentos = 
+			tabla.find(criterio).iterator();

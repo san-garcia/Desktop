@@ -1,0 +1,10 @@
+Document condicion = new Document("matricula", "6329HGJ");
+
+Document nuevoValor = new Document();
+nuevoValor.append("marca", "Ford");
+nuevoValor.append("modelo", "Kuga");
+nuevoValor.append("precio", 23450.0);
+
+Document cambio = new Document("$set", nuevoValor);
+
+coleccion.updateOne(condicion, cambio);
