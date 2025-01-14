@@ -1,15 +1,15 @@
 :root {
     /* Colores para Occidente */
-    --background-color: #f1f2f3;
-    --text-color: #f1f2f3;
-    --accent-color: #c4c7c7; 
+    --background-color: #f7f2ef;
+    --text-color: #f2f2f2;
+    --accent-color: #242223; 
   }
 
   .orient {
     /* Colores para Oriente */
-    --background-color: #f1f2f3;
+    --background-color: #f5e5c0;
     --text-color: #f1f2f3; 
-    --accent-color: #fb4b4b; 
+    --accent-color: #ff6600; 
   }
 
   body {
@@ -204,7 +204,7 @@ footer {
 }
 
 .footer-column h3 {
-  color: var(--accent-color);
+  color: #f2f2f2;
   margin-bottom: 15px;
   font-size: 16px;
 }
@@ -219,12 +219,12 @@ footer {
 }
 
 .footer-column ul li a {
-  color: #f1f2f3;
+  color: #f2f2f2;
   text-decoration: none;
 }
 
 .footer-column ul li a:hover {
-  color: var(--accent-color);
+  color: #d2cfcf;
 }
 
 .social-icons {

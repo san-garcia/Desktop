@@ -1,0 +1,135 @@
+body {
+    background-color: #fafafa;
+}
+
+
+.descripcion-image-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+  
+
+.descripcion-image-container img {
+    width: 79%;  
+    height: 600px;  
+}
+
+
+.encabezado {
+    text-align: center;
+    font-family: 'Komika', sans-serif;
+    color: #d4ff40;
+    text-shadow: 0.5px 0.5px 1px #2f323b;
+}
+
+
+.descripcion {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; 
+}
+.parrafo {
+    font-family: 'Komika', sans-serif;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+
+.zapatillas {
+    width: 30%; 
+    height: auto;
+    margin-right: 25px; 
+}
+
+
+.galeriaFotos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    width: calc(20% - 20px); 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Komika', sans-serif;
+}
+
+
+.precio {
+    color: #d4ff40;
+    font-weight: bold;
+    text-shadow: 0.1px 0.1px 2px #2f323b;
+}
+
+
+button {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #d4ff40; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-family: 'Komika', sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #d4ff40; 
+    color: white; 
+    font-weight: bold;
+}
+
+
+.galeriaDeportivas {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+
+.producto-container {
+    display: flex; 
+    gap: 20px; 
+}
+
+
+.producto-container img {
+    width: 200px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+
+.btn-prev, .btn-next {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}

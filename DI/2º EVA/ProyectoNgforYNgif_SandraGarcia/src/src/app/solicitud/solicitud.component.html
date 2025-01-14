@@ -1,0 +1,38 @@
+<div class="body">
+  <div class="contenedor">
+    <h2>Solicitudes de Empleo</h2>
+    <form [formGroup]="form" (ngSubmit)="filtrarSolicitudes()">
+      <div class="formulario">
+        <div class="imagen">
+          <img src="assets/img/lupa.png" alt="lupa">
+          <label for="tipoTrabajo">Busque las solicitudes de empleo que busca</label>
+        </div>
+        <div class="contenedores">
+          <input type="text" id="tipoTrabajo" formControlName="tipoTrabajo" placeholder="Tipo de trabajo: Profesor, Tecnica" required/>
+        </div>
+        <div class="contenedores">
+          <input type="text" id="ubicacion" formControlName="ubicacion" placeholder="Ubicación: Benimamet, Oropesa" required/>
+        </div>
+        <div class="contenedores">
+          <input type="text" id="salario" formControlName="salario" placeholder="Salario: 2500€" required/>
+        </div>
+      </div>
+      <div class="formulario">
+        <button type="button" (click)="filtrarSolicitudes()">Solicitar Empleo</button>
+      </div>
+    </form>
+
+    <!-- Mostrar los resultados solo cuando la bandera esté activa -->
+    <div *ngIf="mostrarResultados" class="resultados">
+      <h3>Resultados de la búsqueda</h3>
+      <ul *ngIf="solicitudesFiltradas.length > 0; else sinResultados">
+        <li *ngFor="let solicitud of solicitudesFiltradas">
+          <strong>{{ solicitud.tipoTrabajo }}</strong> en {{ solicitud.localidad }} - Salario: {{ solicitud.salario }}€
+        </li>
+      </ul>
+      <ng-template #sinResultados>
+        <p>No se encontraron resultados que coincidan con los criterios de búsqueda.</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

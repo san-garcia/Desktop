@@ -1,0 +1,40 @@
+<div class="body">
+    <div class="contenedor">
+      <h2>Ofrecer Empleo</h2>
+      <form [formGroup]="form" (ngSubmit)="solicitarSubmit()">
+
+        <div class="formulario">
+          <label for="puesto">Título del Puesto:</label>
+          <input type="text" id="puesto" formControlName="puesto" placeholder="Ejemplo: Programador Backend" required>
+        </div>
+
+        <div class="formulario">
+          <label for="ubicacion">Ubicación:</label>
+          <input type="text" id="ubicacion" formControlName="ubicacion" placeholder="Valencia, Alicante" required>
+        </div>
+
+        <div class="formulario">
+          <label for="salario">Salario:</label>
+          <input type="text" id="salario" formControlName="salario" placeholder="Ejemplo: 1800-2500">
+        </div>
+
+        <div class="formulario">
+          <label for="descripcion">Descripción del Puesto:</label>
+          <textarea id="descripcion" formControlName="descripcion" rows="4" placeholder="Detalles sobre el puesto y requisitos" required></textarea>
+        </div>
+
+        <div class="formulario">
+          <button type="submit">Publicar Empleo</button>
+        </div>
+      </form>
+      <!--Muestro los resultados de la búsqueda-->
+    <div class="resultados">
+      <h3>Búsquedas realizadas</h3>
+      <ul>
+        <li *ngFor="let oferta of ofertas">
+          <strong>{{ oferta.puesto }}</strong> en {{ oferta.ubicacion }} {{ oferta.salario}}€ y {{ oferta.descripcion}} 
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>

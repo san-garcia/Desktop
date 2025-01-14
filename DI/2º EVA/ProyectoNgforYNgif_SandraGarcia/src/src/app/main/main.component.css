@@ -1,0 +1,32 @@
+p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Komika', sans-serif;
+    color: #32396f;
+  }
+  
+  .main {
+    margin-top: 70px;
+    display: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main {
+      margin-top: 80px;
+      flex-direction: column;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    p {
+      font-size: 18px;
+    }
+  }
+  

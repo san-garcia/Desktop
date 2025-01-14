@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="contenedor">
+    <h2>Búsqueda de Empleo</h2>
+    <form [formGroup]="form" (ngSubmit)="solicitarSubmit()">
+      
+      <div class="formulario">
+        <label for="tipoTrabajo">Tipo de Trabajo:</label>
+        <input type="text" id="tipoTrabajo" formControlName="tipoTrabajo" placeholder="Ejemplo: Desarrollador, Profesor" required>
+      </div>
+
+      <div class="formulario">
+        <label for="localidad">Lugar:</label>
+        <input type="text" id="localidad" formControlName="localidad" placeholder="Valencia, Alicante" required>
+      </div>
+
+      <div class="formulario">
+        <label for="salario">Rango Salarial:</label>
+        <input type="text" id="salario" formControlName="salario" placeholder="Ejemplo: 1500-2500">
+      </div>
+
+      <div class="formulario">
+        <button type="submit">Buscar Empleo</button>
+      </div>
+    </form>
+
+    <!--Muestro los resultados de la búsqueda-->
+    <div class="resultados">
+      <h3>Búsquedas realizadas</h3>
+      <ul>
+        <li *ngFor="let solicitud of solicitudes">
+          <strong>{{ solicitud.tipoTrabajo }}</strong> en {{ solicitud.localidad }} {{ solicitud.salario}} €
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

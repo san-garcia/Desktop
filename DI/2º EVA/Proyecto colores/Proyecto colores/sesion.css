@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.contenedorFormulario {
+    width: 800px;
+    border-radius: 10px;
+    padding: 72px 150px 25px 150px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    width: 100%;
+}
+
+.contacto {
+    font-family: 'Komika', sans-serif;
+    font-size: 30px;
+    color: #333;
+    text-align: left;
+    padding-bottom: 34px;
+}
+
+.contenedorCajas {
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.caja {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: 'Komika', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0 20px;
+    height: 62px;
+    border: 1px solid #d4ff40; 
+}
+
+textarea.input100 {
+    min-height: 199px;
+    padding: 19px 20px 0 23px;
+}
+
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 43px;
+    gap: 10px;
+}
+
+.boton {
+    background-color: white; 
+    color: #2d3134; 
+    border: 1px solid #d4ff40; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-family: 'Komika', sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #d4ff40; 
+    color: #2d3134; 
+    font-weight: bold;
+}
+
+

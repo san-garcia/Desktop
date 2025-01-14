@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Komika', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    padding: 72px 150px 25px 150px;
+}
+
+.icono {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
