@@ -1,15 +1,7 @@
-:root {
-    /* Colores para Occidente */
-    --background-color: #f1f2f3;
-    --text-color: #f1f2f3;
-    --accent-color: #c4c7c7; 
-  }
-
-  .orient {
-    /* Colores para Oriente */
-    --background-color: #f1f2f3;
+* {
+    --background-color: #f5e5c0;
     --text-color: #f1f2f3; 
-    --accent-color: #fb4b4b; 
+    --accent-color: #ff3333; 
   }
 
   body {
@@ -152,7 +144,7 @@
 }
  
 footer {
-  background-color: #201f1f;
+  background-color: #333;
   color: #f1f2f3;
   padding: 40px 20px;
   font-size: 14px;

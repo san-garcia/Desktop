@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -26,8 +26,8 @@
     </main>
 
     <div class="bienvenida">
-        <h1>Bienvenidos a Hilos de luz</h1>
-        <p>OUR BEST SELLERS</p>
+        <h1 id="titulo">Bienvenidos a Hilos de luz</h1>
+        <p id="descripcion">OUR BEST SELLERS</p>
         <button id="toggle-style">Cambiar a Oriente</button>
     </div>
 
@@ -42,16 +42,16 @@
 
         <div class="imagen">
             <img src="img/pendiente-boton.png" alt="pendiente">
-            <p>Pendientes de botón Corazón Brillante</p>
-            <p>Metal: Recubierto en oro</p>
-            <p>99,00 €</p>
-            <button>Comprar</button>
+            <p id="producto-1">Pendientes de botón Corazón Brillante</p>
+            <p id="oro">Metal: Recubierto en oro</p>
+            <p id="precio-1">99,00 €</p>
+            <button id="comprar">Comprar</button>
         </div>
 
         <div class="imagen">
             <img src="img/aro-perla.png" alt="pendiente">
             <p>Pendientes de aro Perla Cultivada de Agua Dulce</p>
-            <p>Metal: Recubierto en oro</p>
+            <p id="oro">Metal: Recubierto en oro</p>
             <p>119,00 €</p>
             <button>Comprar</button>
         </div>
@@ -59,7 +59,7 @@
         <div class="imagen">
             <img src="img/aro-corazon.png" alt="pendiente">
             <p>Pendientes de Botón Corazón y Triple Gema</p>
-            <p>Metal: Recubierto en oro</p>
+            <p id="oro">Metal: Recubierto en oro</p>
             <p>59,00 €</p>
             <button>Comprar</button>
         </div>
@@ -67,7 +67,7 @@
         <div class="imagen">
             <img src="img/pendiente-boton-corazon.png" alt="pendiente">
             <p>Pendientes de Aro Corazón Asimétrico</p>
-            <p>Metal: Recubierto en oro</p>
+            <p id="oro">Metal: Recubierto en oro</p>
             <p>49,00 €</p>
             <button>Comprar</button>
         </div>
@@ -75,7 +75,7 @@
         <div class="imagen">
             <img src="img/aro-plateado.png" alt="pendiente">
             <p>Pendientes de Aro Abrazo Brillante</p>
-            <p>Metal: Plata de primera ley</p>
+            <p id="plata">Metal: Plata de primera ley</p>
             <p>49,00 €</p>
             <button>Comprar</button>
         </div>
@@ -83,7 +83,7 @@
         <div class="imagen">
             <img src="img/boton-perla-agua.png" alt="pendiente">
             <p>Pendientes de botón Perla Cultivada de Agua Dulce de 4.5mm</p>
-            <p>Metal: Plata de primera ley</p>
+            <p id="plata">Metal: Plata de primera ley</p>
             <p>59,00 €</p>
             <button>Comprar</button>
         </div>
@@ -91,7 +91,7 @@
         <div class="imagen">
             <img src="img/boton-herbario-azul.png" alt="pendiente">
             <p>Pendientes de Botón Herbario Azul Brillante</p>
-            <p>Metal: Plata de primera ley</p>
+            <p id="plata">Metal: Plata de primera ley</p>
             <p>69,00 €</p>
             <button>Comprar</button>
         </div>
@@ -99,7 +99,7 @@
         <div class="imagen">
             <img src="img/aro-fila.png" alt="pendiente">
             <p>Pendientes de Aro Corazón Asimétrico</p>
-            <p>Metal: Recubierto en oro</p>
+            <p id="plata">Metal: Plata de primera ley</p>
             <p>69,00 €</p>
             <button>Comprar</button>
         </div>
@@ -107,7 +107,7 @@
         <div class="imagen">
             <img src="img/pendiente-boton-corazon-halo.png" alt="pendiente">
             <p>Pendientes de Aro Corazón Asimétrico</p>
-            <p>Metal: Recubierto en oro</p>
+            <p id="plata">Metal: Plata de primera ley</p>
             <p>69,00 €</p>
             <button>Comprar</button>
         </div>
@@ -182,21 +182,6 @@
         </div>
     </footer>
 
-    <script>
-        const translations = {
-    spanish: {
-        titulo: "Bienvenidos a Hilos de luz",
-        descripcion: "OUR BEST SELLERS",
-        cambiarIdioma: "Cambiar a Oriente"
-    },
-    chinese: {
-        titulo: "欢迎来到Hilos de Luz",
-        descripcion: "我们的畅销商品",
-        cambiarIdioma: "切换到西方和西班牙语"
-    }
-};
-    </script>
-    
     <script>
         const button = document.getElementById('toggle-style');
         const body = document.body;
