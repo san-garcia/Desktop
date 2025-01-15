@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f7f2ef;
+    font-family: Arial, sans-serif;
 }
 
 .contenedor {
@@ -28,7 +30,7 @@
 .contacto {
     font-family: 'Komika', sans-serif;
     font-size: 30px;
-    color: #333;
+    color: #2b3337;
     text-align: left;
     padding-bottom: 34px;
 }
@@ -38,7 +40,7 @@
     margin-top: 35px;
     position: relative;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-bottom: 30px;
 }
 
@@ -51,8 +53,10 @@
     line-height: 1.2;
     padding: 0 20px;
     height: 62px;
-    border: 1px solid #d4ff40; 
+    border: 1px solid #cfb58f; 
+    border-radius: 50px;
 }
+
 
 textarea.input100 {
     min-height: 199px;
@@ -71,7 +75,7 @@ textarea.input100 {
 .boton {
     background-color: white; 
     color: #2d3134; 
-    border: 1px solid #d4ff40; 
+    border: 1px solid #cfb58f; 
     padding: 10px 20px; 
     font-size: 16px; 
     font-family: 'Komika', sans-serif;
@@ -80,8 +84,8 @@ textarea.input100 {
 }
 
 .boton:hover {
-    background-color: #d4ff40; 
-    color: #2d3134; 
+    background-color: #cfb58f; 
+    color: #f1f2f3; 
     font-weight: bold;
 }
 

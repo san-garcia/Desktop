@@ -131,7 +131,7 @@
     font-size: 14px;
     color: #333;
     font-weight: bold;
-    font-family: 'Komika', sans-serif;
+    
 }
  
 .imagen p:nth-of-type(2) {
@@ -148,7 +148,7 @@
     font-size: 14px;
     color: black;
     font-weight: 700;
-    font-family: 'Komika', sans-serif;
+    
 }
  
 footer {

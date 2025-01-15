@@ -1,26 +1,26 @@
 * {
-    margin: 0;
+    margin: 30px;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
     font-family: 'Komika', sans-serif;
+    background-color: #f7f2ef;
+    font-family: Arial, sans-serif;
 }
 
 .contenedor {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    border-radius: 10px;
-    padding: 72px 150px 25px 150px;
+    min-height: 100vh;
+    padding: 200px 80px;
+    text-align: center;
 }
 
 .icono {
     width: 100%;
+    max-width: 200px;
     height: auto;
-    max-width: 200px; 
-    object-fit: contain; 
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
