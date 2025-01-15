@@ -2,15 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f7f2ef;
     font-family: Arial, sans-serif;
+}
+
+:root {
+    --background-color: #f7f2ef;
+    --text-color: #2b3337;
+    --accent-color: #cfb58f;
+}
+
+.orient {
+    --background-color: #f5e5c0;
+    --text-color: #2b3337;
+    --accent-color: #ff6600;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .contenedor {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Cambiado a columna para poner el botón arriba */
+    justify-content: flex-start; /* Para que los elementos empiecen desde arriba */
     align-items: center;
     padding: 15px;
     position: relative;
@@ -21,16 +38,13 @@
     border-radius: 10px;
     padding: 72px 150px 25px 150px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-}
-
-.formulario {
-    width: 100%;
+    background-color: var(--background-color);
+    margin-top: 20px; /* Para dar espacio entre el botón y el formulario */
 }
 
 .contacto {
-    font-family: 'Komika', sans-serif;
     font-size: 30px;
-    color: #2b3337;
+    color: var(--text-color);
     text-align: left;
     padding-bottom: 34px;
 }
@@ -48,21 +62,13 @@
     display: block;
     width: 100%;
     background: transparent;
-    font-family: 'Komika', sans-serif;
     font-size: 16px;
     line-height: 1.2;
     padding: 0 20px;
     height: 62px;
-    border: 1px solid #cfb58f; 
+    border: 1px solid var(--accent-color);
     border-radius: 50px;
 }
-
-
-textarea.input100 {
-    min-height: 199px;
-    padding: 19px 20px 0 23px;
-}
-
 
 .contenedorBotones {
     display: flex;
@@ -73,20 +79,34 @@ textarea.input100 {
 }
 
 .boton {
-    background-color: white; 
-    color: #2d3134; 
-    border: 1px solid #cfb58f; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    font-family: 'Komika', sans-serif;
-    cursor: pointer; 
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .boton:hover {
-    background-color: #cfb58f; 
-    color: #f1f2f3; 
+    background-color: var(--accent-color);
+    color: #fff;
     font-weight: bold;
 }
 
+#toggle-style {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Asegura que haya un pequeño espacio entre el borde superior de la página y el botón */
+}
 
+#toggle-style:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
+}

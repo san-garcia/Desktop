@@ -8,9 +8,27 @@
 </head>
 <body>
     <div class="contenedor">
-        <p>Tu carrito está vacio en este momento</p>
-        <img src="img/carritoshop.png" alt="carrito" class="icono">
+        <button id="toggle-style">Cambiar a Oriente</button>
+        <p>Tu carrito está vacío en este momento</p>
+        <img src="img/carritoshop.png" alt="carrito" class="icono" id="cart-icon">
         <p>¡Empieza a añadir los productos que más te gustan!</p>
     </div>
+
+    <script>
+        const button = document.getElementById('toggle-style');
+        const body = document.body;
+        const cartIcon = document.getElementById('cart-icon');
+
+        button.addEventListener('click', () => {
+            body.classList.toggle('orient');
+            if (body.classList.contains('orient')) {
+                button.textContent = 'Cambiar a Occidente';
+                cartIcon.src = 'img/carrito1.png';  
+            } else {
+                button.textContent = 'Cambiar a Oriente';
+                cartIcon.src = 'img/carritoshop.png';  
+            }
+        });
+    </script>
 </body>
 </html>

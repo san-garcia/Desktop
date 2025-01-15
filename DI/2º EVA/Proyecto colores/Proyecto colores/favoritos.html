@@ -8,9 +8,28 @@
 </head>
 <body>
     <div class="contenedor">
-        <p>Tu lista de deseos está vacia en este momento</p>
-        <img src="img/heart.png" alt="corazon" class="icono">
+        <button id="toggle-style">Cambiar a Oriente</button>
+        <p>Tu lista de deseos está vacía en este momento</p>
+        <img src="img/heart.png" alt="corazón" class="icono" id="heart-icon">
         <p>¡Empieza a añadir los productos que más te gustan!</p>
     </div>
+    <script>
+        const button = document.getElementById('toggle-style');
+        const body = document.body;
+        const heartIcon = document.getElementById('heart-icon');
+
+        button.addEventListener('click', () => {
+            body.classList.toggle('orient');
+            if (body.classList.contains('orient')) {
+                button.textContent = 'Cambiar a Occidente';
+                heartIcon.src = 'img/heart1.png';  
+            } else {
+                button.textContent = 'Cambiar a Oriente';
+                heartIcon.src = 'img/heart.png';  
+            }
+        });
+    </script>
+
+
 </body>
 </html>

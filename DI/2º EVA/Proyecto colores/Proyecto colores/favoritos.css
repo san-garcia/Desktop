@@ -1,11 +1,26 @@
 * {
-    margin: 30px;
+    margin: 10px;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    font-family: 'Komika', sans-serif;
-    background-color: #f7f2ef;
     font-family: Arial, sans-serif;
+}
+
+:root {
+    --background-color: #f7f2ef;
+    --text-color: #2b3337;
+    --accent-color: #cfb58f;
+}
+
+.orient {
+    --background-color: #f5e5c0;
+    --text-color: #2b3337;
+    --accent-color: #ff6600;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .contenedor {
@@ -23,4 +38,21 @@
     max-width: 200px;
     height: auto;
     margin: 20px 0;
+    filter: drop-shadow(0 0 10px var(--accent-color));
+}
+
+#toggle-style {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggle-style:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
 }

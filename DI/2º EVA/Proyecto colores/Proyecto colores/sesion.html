@@ -8,17 +8,16 @@
 </head>
 <body>
     <div class="contenedor">
+        <button id="toggle-style">Cambiar a Oriente</button>
         <div class="contenedorFormulario">
             <form class="formulario">
                 <span class="contacto">Inicia sesión en Hilos de luz</span>
                 <div class="contenedorCajas">
                     <input class="caja" type="text" name="name" placeholder="Dirección de correo electrónico" required>
                 </div>
-    
-                <div class="contenedorCajas" data-validate="Constraseña">
+                <div class="contenedorCajas">
                     <input class="caja" type="password" name="password" placeholder="Contraseña" required>
                 </div>
-                
                 <div class="contenedorBotones">
                     <button class="boton">Iniciar sesión</button>
                     <button class="boton">Registrarse</button>
@@ -26,5 +25,15 @@
             </form>
         </div>
     </div>
+
+    <script>
+        const button = document.getElementById('toggle-style');
+        const body = document.body;
+
+        button.addEventListener('click', () => {
+            body.classList.toggle('orient');
+            button.textContent = body.classList.contains('orient') ? 'Cambiar a Occidente' : 'Cambiar a Oriente';
+        });
+    </script>
 </body>
 </html>
