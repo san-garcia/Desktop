@@ -1,0 +1,21 @@
+Proyecto Final CFGS Desarrollo de Aplicaciones Multiplataforma 
+Cosas a tener en cuenta: 
+1.- Si por algún casual en la empresa donde se irán las FCT´s no se ayudará a realizar el 
+trabajo, se deberá de documentar detalladamente las acciones que se pueden resaltar en la
+empresa
+1.- Hay que seguir las pautas que se indican en el Anexo I.
+2.- El rango de la memoria debe de ser entre 30-50 páginas. 
+3.- Los objetivos y las conclusiones deben de estar bien claras y especificadas, que con tal
+de realizar una lectura, quede todo entendido. (explicar para tontos)
+4.- Presentar de forma original usando otros medios.
+Pasos que se deben de realizar:
+1.- Cumplir los requisitos que se establecen en el Anexo I.
+2.- Vocabulario técnico y correcto. 
+3.- Maquetación adecuada. 
+4.- Incluir detalles relevantes y ejemplos de ellos. 
+5.- Uso de sistemas operativos y aplicaciones configuradas en máquinas virtuales.
+Pasos para terminar el proyecto:
+1.- Formato PDF.
+2.- Máquinas virtuales y aplicaciones configuradas.
+3.- Incluir todo documentacion que se considere necesaria en la carpeta Anexos.
+
