@@ -98,7 +98,7 @@
         <mxCell id="6VBfth_WhyfYPUwYuWZH-27" value="Activo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="410" y="-545" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6VBfth_WhyfYPUwYuWZH-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.575;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6VBfth_WhyfYPUwYuWZH-26" edge="1" target="6VBfth_WhyfYPUwYuWZH-29">
+        <mxCell id="6VBfth_WhyfYPUwYuWZH-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.575;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6VBfth_WhyfYPUwYuWZH-26" target="6VBfth_WhyfYPUwYuWZH-29" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="-610" as="sourcePoint" />
             <mxPoint x="610" y="-530" as="targetPoint" />
