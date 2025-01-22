@@ -18,7 +18,8 @@ nav a {
     text-decoration: none;
     margin: 0 20px;
     font-size: 18px;
+    font-weight: bold;
 }
 nav a:hover {
-    color: #c50028;
+    color: #ff013d;
 }
