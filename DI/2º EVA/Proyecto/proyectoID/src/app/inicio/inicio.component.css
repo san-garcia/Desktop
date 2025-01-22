@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+.logo {
+    max-width: 100px;
+}
+
 .contenedor {
     display: flex;
     align-items: center;
@@ -33,4 +37,5 @@ body {
 .imagen img {
     max-width: 400px;
     border-radius: 10px;
+    gap: 20px;
 }
