@@ -17,10 +17,18 @@ body {
 .contenedor {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     max-width: 1000px;
     padding: 20px;
     box-sizing: border-box;
+}
+
+
+.contenido-imagenes {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
 }
 
 .descripcion {
@@ -33,6 +41,8 @@ body {
     font-size: 20px;
     line-height: 1.6;
 }
+
+
 
 .imagen img {
     max-width: 400px;
