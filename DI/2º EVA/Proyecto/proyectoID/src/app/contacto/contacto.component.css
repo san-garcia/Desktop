@@ -1,0 +1,23 @@
+.contenedor-contacto {
+    text-align: center;
+}
+
+.imagen {
+    border-radius: 150px;
+}
+
+.imagen img {
+    margin-top: 10px; 
+    width: 250px;
+    height: auto;
+    border-radius: 1000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.imagen img:hover {
+    background-color: #88bcee;
+    box-shadow: 0 0 80px #88bcee;
+    transform: scale(1.05);
+}
+
