@@ -3,17 +3,25 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ArtistasComponent } from './artistas/artistas.component';
+import { ArtistaComponent } from './artista/artista.component';
 import { TatuajesComponent } from './tatuajes/tatuajes.component';
-import { PiercingsComponent } from './piercing/piercings.component';
+import { TatuajeComponent } from './tatuaje/tatuaje.component';
+import { PiercingsComponent } from './piercings/piercings.component';
+import { PiercingComponent } from './piercing/piercing.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+
 export const routes: Routes = [
-    { path: '', redirectTo: 'header', pathMatch: 'full'},
+    { path: '', redirectTo: '', pathMatch: 'full'},
+    { path: 'header', component: HeaderComponent},
     { path: 'footer', component: FooterComponent},
     { path: 'inicio', component: InicioComponent},
     { path: 'artistas', component: ArtistasComponent},
+    { path: 'artista', component: ArtistaComponent},
     { path: 'tatuajes', component: TatuajesComponent},
-    { path: 'piercing', component: PiercingsComponent},
+    { path: 'tatuaje', component: TatuajeComponent},
+    { path: 'piercings', component: PiercingsComponent},
+    { path: 'piercing', component: PiercingComponent},
     { path: 'contacto', component: ContactoComponent}
 
 ];

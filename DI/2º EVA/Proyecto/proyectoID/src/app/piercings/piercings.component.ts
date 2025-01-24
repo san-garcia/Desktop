@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-piercings',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './piercings.component.html',
   styleUrl: './piercings.component.css'
 })

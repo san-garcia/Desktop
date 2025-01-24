@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+.texto {
+    text-align: center;  
+}
+
 .galeriaTatuajes {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
