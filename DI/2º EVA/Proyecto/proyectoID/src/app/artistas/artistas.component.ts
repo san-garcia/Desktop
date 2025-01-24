@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 interface Artista {
   nombre: string;
   especilidad: string;
   imagen: string;
   ig:string
 }
+
 @Component({
   selector: 'app-artistas',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './artistas.component.html',
   styleUrl: './artistas.component.css'
 })
