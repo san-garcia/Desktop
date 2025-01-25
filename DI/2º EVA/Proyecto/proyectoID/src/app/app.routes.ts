@@ -12,12 +12,12 @@ import { ContactoComponent } from './contacto/contacto.component';
 
 
 export const routes: Routes = [
-    { path: '', redirectTo: '', pathMatch: 'full'},
+    { path: '', redirectTo: 'inicio', pathMatch: 'full'},
     { path: 'header', component: HeaderComponent},
     { path: 'footer', component: FooterComponent},
     { path: 'inicio', component: InicioComponent},
     { path: 'artistas', component: ArtistasComponent},
-    { path: 'artista', component: ArtistaComponent},
+    { path: 'artista/id', component: ArtistaComponent},
     { path: 'tatuajes', component: TatuajesComponent},
     { path: 'tatuaje', component: TatuajeComponent},
     { path: 'piercings', component: PiercingsComponent},

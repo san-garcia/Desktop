@@ -1,5 +1,6 @@
 .contenido {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -9,10 +10,48 @@
 }
 
 .columnas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     max-width: 100%;
     margin-top: 50px;
+}
+
+.perfil img {
+    width: 300px;  
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px; 
+}
+
+.descripcion {
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 1.2rem; 
+}
+
+.imagenes-tatuajes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    text-align: right;
+}
+
+.tatuajes, .diseño {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    text-align: right;
+    max-width: 100%;
+}
+
+.tatuajes img, .diseño img {
+    width: 100%;
+    max-width: 5200px;  
+    height: auto;
+    border-radius: 10px;  
 }
