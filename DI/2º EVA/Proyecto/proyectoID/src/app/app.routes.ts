@@ -17,11 +17,11 @@ export const routes: Routes = [
     { path: 'footer', component: FooterComponent},
     { path: 'inicio', component: InicioComponent},
     { path: 'artistas', component: ArtistasComponent},
-    { path: 'artista', component: ArtistaComponent},
+    { path: 'artista/:id', component: ArtistaComponent},
     { path: 'tatuajes', component: TatuajesComponent},
-    { path: 'tatuaje', component: TatuajeComponent},
+    { path: 'tatuaje/:id', component: TatuajeComponent},
     { path: 'piercings', component: PiercingsComponent},
-    { path: 'piercing', component: PiercingComponent},
+    { path: 'piercing/:id', component: PiercingComponent},
     { path: 'contacto', component: ContactoComponent}
 
 ];
