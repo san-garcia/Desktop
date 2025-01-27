@@ -17,11 +17,15 @@ export const routes: Routes = [
     { path: 'footer', component: FooterComponent},
     { path: 'inicio', component: InicioComponent},
     { path: 'artistas', component: ArtistasComponent},
+<<<<<<< HEAD
     { path: 'artista/id', component: ArtistaComponent},
+=======
+    { path: 'artista/:id', component: ArtistaComponent},
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
     { path: 'tatuajes', component: TatuajesComponent},
-    { path: 'tatuaje', component: TatuajeComponent},
+    { path: 'tatuaje/:id', component: TatuajeComponent},
     { path: 'piercings', component: PiercingsComponent},
-    { path: 'piercing', component: PiercingComponent},
+    { path: 'piercing/:id', component: PiercingComponent},
     { path: 'contacto', component: ContactoComponent}
 
 ];

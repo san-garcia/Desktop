@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
+=======
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { ArtistasServiceService } from '../services/artistas-service.service';
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-artista',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './artista.component.html',
   styleUrl: './artista.component.css'
 })
 
+<<<<<<< HEAD
 export class ArtistaComponent implements OnInit {
   artistaSeleccionado: any;
 
@@ -176,4 +183,16 @@ export class ArtistaComponent implements OnInit {
   }
 
   
+=======
+export class ArtistaComponent {
+  busqueda: any;
+
+  constructor(private route: ActivatedRoute, private artistasService: ArtistasServiceService){}
+
+  ngOnInit() {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.busqueda = this.artistasService.getBusquedaById(id!, 'artistas');
+    
+  }
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
 }

@@ -1,19 +1,20 @@
 <div class="contenido">
     <div class="columnas">
         <div class="perfil">
+<<<<<<< HEAD
             <img src="artistas/jessica.jpg" alt="perfil-jessica">
+=======
+            <img src="{{ busqueda.imagen }}" alt=" {{ busqueda.nombre }} ">
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
         </div>
         
         <div class="descripcion">
-            <p>Jessica lleva muchísimo tiempo con nosotros en el estudio. Sus obras han hecho que la gente 
-            tenga su tatuaje soñado plasmado en su piel. Los colores que implementa hace que sea toda una obra 
-            maestra. Si tienes pensado realizarte un tatuaje con Jessica, ¡no lo dudes!. Te dejamos su contacto, las 
-            obras que ha hecho y algunos diseños que tiene disponible.
-            </p>
+            <p> {{ busqueda.descripcion }}</p>
         </div>
 
         <div class="imagenes-tatuajes">
             <div class="tatuajes">
+<<<<<<< HEAD
                 <img src="artistas/tatuajes-jessica/tatuaje1.jpg" alt="tatuaje1">
                 <img src="artistas/tatuajes-jessica/tatuaje2.jpg" alt="tatuaje2">
                 <img src="artistas/tatuajes-jessica/tatuaje3.jpg" alt="tatuaje3">
@@ -29,6 +30,23 @@
                 <img src="artistas/tatuajes-jessica/diseño4.jpg" alt="diseño4">
                 <img src="artistas/tatuajes-jessica/diseño5.jpg" alt="diseño5">
                 <img src="artistas/tatuajes-jessica/diseño6.jpg" alt="diseño6">
+=======
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje1.jpg" alt="tatuaje1">
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje2.jpg" alt="tatuaje2">
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje3.jpg" alt="tatuaje3">
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje4.jpg" alt="tatuaje4">
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje5.jpg" alt="tatuaje5">
+                <img src="artistas/{{ busqueda.tatuajes }}/tatuaje6.jpg" alt="tatuaje6">
+            </div>
+            
+            <div class="diseño">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño1.jpg" alt="diseño1">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño2.jpg" alt="diseño2">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño3.jpg" alt="diseño3">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño4.jpg" alt="diseño4">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño5.jpg" alt="diseño5">
+                <img src="artistas/{{ busqueda.tatuajes }}/diseño6.jpg" alt="diseño6">
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
             </div>
         </div>
     </div>
