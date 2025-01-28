@@ -170,8 +170,8 @@ export class ArtistasServiceService {
 
   getBusquedaById(id: string, categoria: string) {
     if(categoria === 'artistas') return this.artistas.find((busqueda) => busqueda.id === id);
-    else if(categoria === 'tatuajes') return this.artistas.find((busqueda) => busqueda.id === id);
-    else if(categoria === 'piercings') return this.artistas.find((busqueda) => busqueda.id === id);
+    else if(categoria === 'tatuajes') return this.tatuajes.find((busqueda) => busqueda.id === id);
+    else if(categoria === 'piercings') return this.piercings.find((busqueda) => busqueda.id === id);
     else return;
   }
 }

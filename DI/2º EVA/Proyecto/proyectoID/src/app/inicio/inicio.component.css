@@ -20,6 +20,7 @@ body {
     max-width: 1200px;
     padding: 20px;
     box-sizing: border-box;
+    margin-left: 250px;
 }
 
 .contenido-imagenes {
