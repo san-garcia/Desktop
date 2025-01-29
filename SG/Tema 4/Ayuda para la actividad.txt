@@ -11,13 +11,19 @@ Fase 4: Cierre – Evaluación final y cierre del proyecto.
 
 2. Justificación de la selección del ERP: Selenne
 He seleccionado Selenne ERP, ya que es una solución especializada en la industria de fabricación y proyectos. 
+
 Sus características clave incluyen:
 
 Adaptabilidad: Cuenta con módulos específicos para la fabricación de maquinaria, piezas y accesorios, 
 proyectos de instalaciones y montajes, lo que lo hace ideal para la industria cerámica.
+
 Gestión integral: Cubre todas las áreas de la empresa, desde producción hasta gestión financiera.
+
 Escalabilidad: Permite crecer según las necesidades futuras de la empresa.
+
 Automatización de procesos: Reduce errores y mejora la eficiencia operativa.
+
+
 Este ERP cubre las funcionalidades requeridas por la empresa, tales como:
 
 Planificación de la producción y control de calidad.
@@ -28,7 +34,7 @@ Control financiero y contable.
 3. Presupuesto aproximado
 El coste de implementación de un ERP como Selenne puede dividirse en las siguientes categorías:
 
-Concepto	Coste Aproximado (EUR)
+Concepto		Coste 	Aproximado (EUR)
 Licencias de software	15,000 - 30,000
 Consultoría e implementación	10,000 - 25,000
 Formación del personal	5,000 - 10,000

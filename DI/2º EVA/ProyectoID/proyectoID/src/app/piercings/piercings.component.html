@@ -1,0 +1,9 @@
+<div class="titulo">
+    <h2>💉 Las perforaciones más pedidas</h2>
+</div>
+<div class="galeriaTatuajes">
+    <div class="tattoo" *ngFor="let busqueda of busquedas">
+        <a [routerLink]="['../piercing', busqueda.id]"><img src="{{ busqueda.imagen }}" alt="{{ busqueda.nombre }}"></a>
+        <p>{{ busqueda.nombre }}</p>
+    </div>
+</div>

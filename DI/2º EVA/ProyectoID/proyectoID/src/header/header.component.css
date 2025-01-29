@@ -1,0 +1,25 @@
+header {
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    max-width: 50px;
+}
+nav {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    left: 0;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ff013d;
+}

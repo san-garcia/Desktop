@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo h2 {
+    text-align: center;  
+}
+
+.galeriaTatuajes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px; 
+    text-align: center;
+    max-width: 80%;
+    transform: translateX(150px);
+    margin-top: 50px;
+}
+
+.tattoo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.tattoo img {
+    margin-top: 60px; 
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.tattoo img:hover {
+    transform: scale(1.05);
+    border-radius: 8px;
+}
+
+.tattoo p:first-of-type {
+    margin-top: 10px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
