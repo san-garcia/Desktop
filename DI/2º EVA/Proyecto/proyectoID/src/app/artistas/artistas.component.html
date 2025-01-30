@@ -1,0 +1,70 @@
+<div class="titulo">
+    <h2>✨ Nuestros expertos en conseguir el diseño soñado, plasmándolo en el tatuaje ✨</h2>
+</div>
+<div class="galeriaArtistas">
+<<<<<<< HEAD
+    <div class="perfil">
+        <a [routerLink]="['../artista','jessica']"><img src="artistas/jessica.jpg" alt="tatuador"></a>
+        <p>Jesica</p>
+        <p>Especializada en: Tradicional a color/negro y blackwork</p>
+        <p>jesica_36</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','ana']"><img src="artistas/ana.jpg" alt="tatuador"></a>
+        <p>Ana</p>
+        <p>Especializada en: Microrealismo, Fineline y Blackwork</p>
+        <p>anaplaza.tattoo</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','joni']"><img src="artistas/joni.jpg" alt="tatuador"></a>
+        <p>Joni</p>
+        <p>Especializado en: Realismo y microrealismo</p>
+        <p>badblood13tattoo</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','jota']"><img src="artistas/jota.jpg" alt="tatuador"></a>
+        <p>Jota</p>
+        <p>Especializado en: Blackwork, Dotwork e Ilustración</p>
+        <p>13tattooer</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','john']"><img src="artistas/jhon.jpg" alt="tatuador"></a>
+        <p>John</p>
+        <p>Especializado en: Realismo black and grey y Surrealismo color</p>
+        <p>jhonbarrios.tattoo</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','yasmina']"><img src="artistas/yasmina.jpg" alt="tatuador"></a>
+        <p>Yasmina</p>
+        <p>Especializada en: Piercing, microdermal y gemas mentales</p>
+        <p>17.yaspiercing</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','chaky']"><img src="artistas/chaky.jpg" alt="tatuador"></a>
+        <p>Chaky</p>
+        <p>Especializado en: Lettering, Graffiti y Blackwork</p>
+        <p>chakytattoo</p>
+    </div>
+
+    <div class="perfil">
+        <a [routerLink]="['../artista','jan']"><img src="artistas/jan.png" alt="tatuador"></a>
+        <p>Jan</p>
+        <p>Especializado en: Black n Gray, Geometría y Fine line</p>
+        <p>jan_soloink</p>
+    </div>
+=======
+    <div class="perfil" *ngFor="let busqueda of busquedas">
+        <a [routerLink]="['../artista',busqueda.id]"><img src="{{ busqueda.imagen }}" alt="{{ busqueda.nombre }}"></a>
+        <p>{{ busqueda.nombre }}</p>
+        <p>{{ busqueda.especialidad }}</p>
+        <p>{{ busqueda.ig }}</p>
+    </div>
+
+>>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
+</div>
