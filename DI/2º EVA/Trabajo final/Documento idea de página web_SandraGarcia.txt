@@ -1,0 +1,4 @@
+Mi idea de página web será la misma que haré para la aplicación móvil. Esta página web se podrá registrar los 
+usuarios y en ella se podrá llegar a ver la información de aquellos usuarios que quiera saber acerca de ellos,
+por ejemplo, su nombre, de dónde es en el caso de que este cerca del usuario que necesite ayuda, información 
+sobre esta persona, si es amable, si puede estar operativa en caso de que surja una llamada. 

@@ -1,0 +1,5 @@
+Mi idea de aplicación es hacer una app que dirigida a mujeres. Muchas veces cuando vamos solas por la calle y 
+sentimos miedo por si nos estan persiguiendo o acosándonos y no tenemos con nadie con quien hablar por 
+teléfono. Esta app ofrecerá hablar con usuarios que esten registrados en la app y pueda llamarles y 
+sentirse seguras al volver a casa.
+
