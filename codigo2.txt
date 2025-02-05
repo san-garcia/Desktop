@@ -1,0 +1,264 @@
+package actividad7tema6ad_sandragarcia;
+
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+/**
+ *
+ * @author SandraGarciaFabra
+ */
+public class Actividad7Tema6AD_SandraGarcia {
+
+    
+    public static void main(String[] args) throws IOException {
+       // Llamamos al método listado API 
+        String direccionURL = "http://localhost:8080/WebVehiculosTema6AD_SandraGarcia/apiconcesionario/vehiculos";
+        
+        // JSON para la hora de insertar el nuevo libro
+        String json ="{\"cilindrada\":1195,\"codvehiculo\":1010,\"color\":\"Rosa\",\"extras\":\"Pantalla Integrada\",\"fecha\":\"2025-02-05T22:00:00Z[UTC]\",\"marca\":\"Mini\",\"matricula\":\"V-0604-DX\",\"modelo\":\"Cooper\",\"motor\":\"G\",\"precio\":20000.00,\"tipo\":\"C\"}";
+        
+        // JSON para la hora de insertar el nuevo libro
+        String jsonActualizado ="{\"cilindrada\":1195,\"codvehiculo\":1010,\"color\":\"Negro\",\"extras\":\"Pantalla Integrada\",\"fecha\":\"2025-02-05T22:00:00Z[UTC]\",\"marca\":\"Mini\",\"matricula\":\"V-0604-SG\",\"modelo\":\"Cooper Works\",\"motor\":\"G\",\"precio\":20500.00,\"tipo\":\"C\"}";
+        
+        // Importo el scanner para el menu
+        Scanner teclado = new Scanner(System.in);
+        
+        int op;
+        do {                
+            System.out.println("Eliga una opción");
+            System.out.println("1. Mostrar todo el listado de vehiculos");
+            System.out.println("2. Mostrar vehiculos por ID");
+            System.out.println("3. Insertar nuevo vehiculo");
+            System.out.println("4. Actulizar vehiculos por ID");
+            System.out.println("5. Eliminar vehiculos");
+            System.out.println("0. Salir");
+            op = teclado.nextInt();
+            teclado.nextLine();
+            
+            switch(op) {
+                case 1: 
+                    // Muestro por consola el listado
+                    System.out.println(listadoAPI(direccionURL));
+                    break;
+                    
+                case 2: 
+                    System.out.println("Escriba el ID del vehiculo que desea consultar");
+                    int id = teclado.nextInt();
+                    System.out.println(consultaAPI(direccionURL, id));
+                    break;
+                
+                case 3: 
+                    insertar(direccionURL, json);
+                    System.out.println("Vehiculo insertado con éxito");
+                    break;
+                
+                case 4: 
+                    System.out.println("Escriba el ID del vehiculo que desea actualizar");
+                    int idActualizar = teclado.nextInt();
+                    actualizar(direccionURL, jsonActualizado, idActualizar);
+                    System.out.println("Vehiculo actualizado correctamente");
+                    break;
+                    
+                case 5:
+                    System.out.println("Escriba el ID del vehiculo que desea eliminar");
+                    int idEliminar = teclado.nextInt();
+                    eliminar(direccionURL, idEliminar);
+                    System.out.println("Vehiculo eliminado correctamente");
+                    
+                case 0:
+                    System.out.println("Hasta pronto!!!");
+                    break;
+                
+                default:
+                    System.out.println("Ese numero no corresponde con el menú");
+                    System.out.println("Por favor, vuelva a insertar uno que si corresponda con el menú");
+                    
+            }       
+            
+            
+        } while (op!=0); 
+    }
+    // Método get 
+    public static String listadoAPI(String urlTexto) throws MalformedURLException, IOException {
+        // Creamos la conexión a la URL 
+        URL url = new URL(urlTexto);
+        
+        // Hago la instancia del url y realizamos la conexion 
+        HttpURLConnection conexion = (HttpURLConnection) url.openConnection(); 
+        
+        // Establecemos el método HTTP a GET y el tipo de trabajo a JSON
+        conexion.setRequestMethod("GET");
+        conexion.setRequestProperty("Accept", "application/json");
+        
+        // Obtenemos el código d respuesta 
+        int codRespuesta = conexion.getResponseCode();
+        
+        // Muestro por pantalla 
+        System.out.println("Código respuesta: " + codRespuesta); 
+        
+        // Creamos flujo sobre la conexión
+        InputStreamReader fr = new InputStreamReader(conexion.getInputStream()); 
+        
+        // Creamos el buffer sobre el flujo
+        BufferedReader br = new BufferedReader(fr);
+        
+        // Leemos linea a linea lo que va devolviendo la API
+        String linea = "";
+        String json="";
+        
+        while ((linea = br.readLine())!=null) {            
+            json += linea;
+        }
+        
+        // Cerramos flujo de buffer 
+        br.close();
+        
+        // Cerramos flujo comunicacion
+        fr.close();
+        
+        // Desconectamos de la API 
+        conexion.disconnect();
+        
+        // Retornamos el JSON
+        return json;
+    }
+    
+    // Método consultar uno en concreto
+    public static String consultaAPI(String urlTexto, int codvehiculo) throws MalformedURLException, IOException {
+        // Creamos la conexión a la URL 
+        URL url = new URL(urlTexto + "/" + codvehiculo);
+        
+        // Hago la instancia del url y realizamos la conexion 
+        HttpURLConnection conexion = (HttpURLConnection) url.openConnection(); 
+        
+        // Establecemos el método HTTP a GET y el tipo de trabajo a JSON
+        conexion.setRequestMethod("GET");
+        conexion.setRequestProperty("Accept", "application/json");
+        
+        // Obtenemos el código d respuesta 
+        int codRespuesta = conexion.getResponseCode();
+        
+        // Muestro por pantalla 
+        System.out.println("Código respuesta: " + codRespuesta); // Nos debe de salir 200 si ha ido todo ok
+        
+        // Creamos flujo sobre la conexión
+        InputStreamReader fr = new InputStreamReader(conexion.getInputStream()); // me devuelve la conexion con el metodo
+        
+        // Creamos el buffer sobre el flujo
+        BufferedReader br = new BufferedReader(fr);
+        
+        // Leemos linea a linea lo que va devolviendo la API
+        String linea = "";
+        String json="";
+        
+        while ((linea = br.readLine())!=null) {            
+            json += linea;
+        }
+        
+        // Cerramos flujo de buffer 
+        br.close();
+        
+        // Cerramos flujo comunicacion
+        fr.close();
+        
+        // Desconectamos de la API 
+        conexion.disconnect();
+        
+        // Retornamos el JSON
+        return json;
+    }
+    
+    // Método eliminar 
+    public static void eliminar(String urlTexto, int codvehiculo) throws MalformedURLException, IOException {
+        // Creamos la URL a partir del String 
+        URL url = new URL(urlTexto + "/" + codvehiculo);
+        
+        // Realizamos la conexión
+        HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
+        
+        // Establecemos el método HTTP y el intercambio de informacion será por JSON 
+        conexion.setRequestMethod("DELETE");
+        conexion.setRequestProperty("Accept", "application/json");
+        
+        // Obtenemos el código de respuesta de la API
+        int codRespuesta = conexion.getResponseCode();
+        System.out.println("Respuesta: " + codRespuesta);
+        
+        // Desconectamos 
+        conexion.disconnect();
+    }
+    
+    // Método insertar
+    public static void insertar(String urlTexto, String json) throws MalformedURLException, IOException {
+        // Creamos la URL 
+        URL url = new URL(urlTexto);
+        
+        // Realizamos la conexión
+        HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
+        
+        // Indicamos método HTTP POST, utilizar JSON y se envirán este a la API
+        conexion.setDoOutput(true); // Esto inidca un envío de JSON a la API
+        
+        // Establecemos el método HTTP y el intercambio de informacion será por JSON 
+        conexion.setRequestMethod("POST");
+        conexion.setRequestProperty("Content-Type", "application/json");
+        
+        // Creamos el canal de salida 
+        OutputStream salida = conexion.getOutputStream();
+        
+        // Enviamos a través del canal de salida el JSON como array de bytes
+        salida.write(json.getBytes());
+        
+        // Volcamos
+        salida.flush();
+        
+        // Cerramos
+        salida.close();
+        
+        // Obtenemos el código de respuesta
+        int codRespuesta = conexion.getResponseCode();
+        
+        // Muestro por pantalla 
+        System.out.println("Código respuesta: " + codRespuesta); 
+        
+        // Desconecto
+        conexion.disconnect();
+    }
+    
+    public static void actualizar (String urlTexto, String json, int codvehiculo) throws MalformedURLException, IOException {
+        // Creamos la URL 
+        URL url = new URL(urlTexto + "/" + codvehiculo);
+        
+        // Realizamos la conexión
+        HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
+        
+        // Indicamos método HTTP PUT, utilizar JSON y se envirán este a la API
+        conexion.setDoOutput(true); 
+        
+        // Establecemos el método HTTP y el intercambio de informacion será por JSON 
+        conexion.setRequestMethod("PUT");
+        conexion.setRequestProperty("Content-Type", "application/json");
+        
+        // Creamos el canal de salida 
+        OutputStream salida = conexion.getOutputStream();
+        
+        // Enviamos a través del canal de salida el JSON como array de bytes
+        salida.write(json.getBytes());
+        
+        // Volcamos
+        salida.flush();
+        
+        // Cerramos
+        salida.close();
+        
+        // Obtenemos el código de respuesta
+        int codRespuesta = conexion.getResponseCode();
+        
+        // Muestro por pantalla 
+        System.out.println("Código respuesta: " + codRespuesta);
+        
+        // Desconecto
+        conexion.disconnect();
+    }
+}
