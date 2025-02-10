@@ -1,0 +1,22 @@
+.inicio {
+    padding: 40px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.columna {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.columna h3 {
+    color: #444;
+    font-size: 16px;
+}
