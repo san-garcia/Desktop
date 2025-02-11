@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { ServicioService } from '../servicio.service';
 
 @Component({
   selector: 'app-usuarias',
-  imports: [RouterLink, CommonModule],
+  imports: [CommonModule],
   templateUrl: './usuarias.component.html',
   styleUrl: './usuarias.component.css'
 })
