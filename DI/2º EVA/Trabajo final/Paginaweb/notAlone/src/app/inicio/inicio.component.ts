@@ -43,19 +43,19 @@ export class InicioComponent {
 
     {
       pregunta: '¿El botón de emergencia envía una alerta a alguien automáticamente?',
-      respuesta: 'No, el botón de emergencia solo se enviará a la policía, ya como su propio nombre lo indica, al ser una emergencia es de un carácter más grave que debe de ser imprenscindible para la policia',
+      respuesta: 'No, el botón de emergencia solo se enviará a la policía, ya como su propio nombre lo indica, al ser una emergencia es de un carácter más grave que debe de ser imprenscindible para las autoridades y poner en marcha un plan',
       mostrar: false
     },
 
     {
       pregunta: '¿Se puede bloquear a alguien en eol chat si no me siento cómoda?',
-      respuesta: 'Si, se puede llegar a bloquear a usuarios que no te llegues a sentir cómoda',
+      respuesta: 'Si, se puede llegar a bloquear a usuarios que no te llegues a sentir cómoda, esto de normal no suele ocurrir ya que previamente se realiza un test de confedicacidad para saber que usuarios estan registrados y que no hagan sentir al resto de usuarias incómodas dentro de la  aplicación',
       mostrar: false
     },
 
     {
       pregunta: '¿Es necesario registarme en la aplicación para así usarla?',
-      respuesta: 'Si, es totalmente necesario',
+      respuesta: 'Si, es totalmente necesario, sin esto no se podrá a llegar a usar la aplicación correctamente',
       mostrar: false
     }
   ]
