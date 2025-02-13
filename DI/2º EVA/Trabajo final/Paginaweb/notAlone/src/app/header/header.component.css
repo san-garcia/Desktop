@@ -30,19 +30,15 @@ header {
 
 nav ul {
     list-style: none;
+}
+
+.botones {
     display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.botones img {
+    max-width: 25px;
+    max-height: 30px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #c6b3f1;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}

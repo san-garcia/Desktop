@@ -1,1 +1,17 @@
-<p>usuarias works!</p>
+<div class="titulo">
+    <h2>Conoce a nuestras usuarias</h2>
+</div>
+<div class="galeriaArtistas">
+    <div *ngFor="let service of servicio">
+        <div class="perfil">
+            <a [routerLink]="['../servicio',service.id]"><img src="{{ service.img }}"></a>
+            <p>{{ service.nombre }}</p>
+            <p>{{ service.nombre }}</p>
+            <p>{{ service.pop }}</p>
+            <p>{{ service.ultvezconectada }}</p>
+            <p>{{ service.ubi }}</p>
+            <p>{{ service.desc }}</p>
+            <p>{{ service.telefono }}</p>
+        </div>
+    </div>
+</div>

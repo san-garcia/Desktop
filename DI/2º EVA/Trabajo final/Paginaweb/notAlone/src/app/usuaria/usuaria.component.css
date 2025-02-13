@@ -1,0 +1,32 @@
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.columnas {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    max-width: 80%;
+}
+
+.perfil img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion {
+    max-width: 400px; 
+    font-size: 18px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

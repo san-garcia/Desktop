@@ -5,6 +5,8 @@ import { UsuariaComponent } from './usuaria/usuaria.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { SesionComponent } from './sesion/sesion.component';
+
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full'},
@@ -13,5 +15,6 @@ export const routes: Routes = [
     { path: 'usuarias', component: UsuariasComponent},
     { path: 'usuaria/id', component: UsuariaComponent},
     { path: 'mapa', component: MapaComponent},
-    { path: 'informacion', component: InformacionComponent}
+    { path: 'informacion', component: InformacionComponent},
+    { path: 'sesion', component: SesionComponent}
 ];
