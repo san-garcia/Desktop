@@ -1,5 +1,5 @@
 .login {
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,12 +11,18 @@
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    width: 900px; 
-    height: 500px; 
+    width: 850px;
+    height: 520px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .imagen {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 10px;
 }
 
 .imagen img {
@@ -27,7 +33,7 @@
 
 .contenido {
     flex: 1;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,62 +41,52 @@
 }
 
 .contenido h2 {
-    font-size: 28px; 
-    margin-bottom: 25px;
+    font-size: 26px;
+    margin-bottom: 20px;
     color: #333;
 }
 
 .cajas {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     text-align: left;
 }
 
 .cajas label {
     display: block;
-    font-size: 18px; 
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .cajas input {
     width: 100%;
-    padding: 15px; 
-    font-size: 18px; 
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .cajas input:focus {
     border-color: #7450e5;
     outline: none;
-    box-shadow: 0 0 8px rgba(110, 142, 251, 0.6);
+    box-shadow: 0 0 6px rgba(116, 80, 229, 0.4);
 }
 
 button {
     width: 100%;
-    padding: 15px; 
+    padding: 12px;
     background: #7450e5;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 18px; 
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 button:hover {
-    background: #7450e5;
+    background: #5a3cc1;
 }
 
-.cuenta {
-    margin-top: 12px;
-    display: block;
-    color: #7450e5;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.cuenta:hover {
-    text-decoration: underline;
-}

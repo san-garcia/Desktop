@@ -1,12 +1,12 @@
 .titulo h2 {
     margin-top: 50px;
-    text-align: center;  
+    text-align: center;
 }
 
-.galeriaArtistas {
+.galeriaUsuarios {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px; 
+    gap: 30px;
     text-align: center;
     max-width: 80%;
     transform: translateX(150px);
@@ -22,17 +22,15 @@
 
 .perfil img {
     width: 250px;
-    height: 250px; 
-    object-fit: cover; 
+    height: 250px;
+    object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
 }
 
-
-
 .perfil p:first-of-type {
-    margin-top: 10px; 
+    margin-top: 10px;
     font-size: 14px;
     color: white;
     font-weight: bold;
@@ -40,7 +38,7 @@
 }
 
 .perfil p:nth-of-type(2) {
-    margin-top: 0.5px; 
+    margin-top: 0.5px;
     font-family: 'Komika', sans-serif;
     font-size: 14px;
     color: #918c8c;
@@ -53,4 +51,74 @@
     color: black;
     font-weight: 700;
     font-family: 'Komika', sans-serif;
+}
+
+.conexion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conexion img {
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    background-color: #734eec;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    gap: 8px;
+}
+
+.boton img {
+    width: 20px;
+    height: auto;
+}
+
+.boton:hover {
+    background-color: #402783;
+    transform: scale(1.05);
+}
+
+.valoracion {
+    display: flex;
+    align-items: center;
+}
+
+.valoracion img {
+    width: 90px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+
+.boton-siguiente {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+button {
+    background-color: #402783;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #402783;
 }

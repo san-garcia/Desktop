@@ -6,6 +6,7 @@ import { InformacionComponent } from './informacion/informacion.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SesionComponent } from './sesion/sesion.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 export const routes: Routes = [
@@ -16,5 +17,6 @@ export const routes: Routes = [
     { path: 'usuaria/id', component: UsuariaComponent},
     { path: 'mapa', component: MapaComponent},
     { path: 'informacion', component: InformacionComponent},
-    { path: 'sesion', component: SesionComponent}
+    { path: 'sesion', component: SesionComponent},
+    { path: 'registro', component: RegistroComponent}
 ];
