@@ -48,7 +48,7 @@ export class InicioComponent {
     },
 
     {
-      pregunta: '¿Se puede bloquear a alguien en eol chat si no me siento cómoda?',
+      pregunta: '¿Se puede bloquear a alguien en el chat si no me siento cómoda?',
       respuesta: 'Si, se puede llegar a bloquear a usuarios que no te llegues a sentir cómoda, esto de normal no suele ocurrir ya que previamente se realiza un test de confedicacidad para saber que usuarios estan registrados y que no hagan sentir al resto de usuarias incómodas dentro de la  aplicación',
       mostrar: false
     },
