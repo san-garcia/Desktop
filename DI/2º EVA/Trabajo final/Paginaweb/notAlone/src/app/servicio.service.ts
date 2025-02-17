@@ -324,7 +324,120 @@ export class ServicioService {
         desc: 'Periodista y creadora de pódcast.',
         telefono: '611 334 455'
       }
+      
+  ];
 
+  usuarias2 = [
+    {
+      id: '29',
+      nombre: 'Adriana',
+      apellidos: 'Suárez',
+      pop: 'imagen de valoracions',
+      img: 'img/adriana.png',
+      ultvezconectada: 'Hace 3 horas',
+      ubi: 'Palma de Mallorca  Santa Catalina',
+      desc: 'Amante del mar y la fotografía submarina.',
+      telefono: '655 778 899'
+    },
+    {
+      id: '30',
+      nombre: 'Beatriz',
+      apellidos: 'Molina',
+      pop: 'imagen de valoracions',
+      img: 'img/beatriz.png',
+      ultvezconectada: 'Hace 1 día',
+      ubi: 'Ibiza  Dalt Vila',
+      desc: 'DJ y productora de música house.',
+      telefono: '666 889 900'
+    },
+    {
+      id: '31',
+      nombre: 'Carmen',
+      apellidos: 'Díaz',
+      pop: 'imagen de valoracions',
+      img: 'img/carmen.png',
+      ultvezconectada: 'En línea',
+      ubi: 'Tenerife  La Laguna',
+      desc: 'Bióloga marina y activista medioambiental.',
+      telefono: '677 990 011'
+    },
+    {
+      id: '32',
+      nombre: 'Daniel',
+      apellidos: 'Pérez',
+      pop: 'imagen de valoracions',
+      img: 'img/daniel.png',
+      ultvezconectada: 'Hace 2 horas',
+      ubi: 'Las Palmas de Gran Canaria  Vegueta',
+      desc: 'Fotógrafo de moda y viajes.',
+      telefono: '688 001 122'
+    },
+    {
+      id: '33',
+      nombre: 'Eva',
+      apellidos: 'López',
+      pop: 'imagen de valoracions',
+      img: 'img/eva.png',
+      ultvezconectada: 'Hace 4 horas',
+      ubi: 'Santander  El Sardinero',
+      desc: 'Surfista y entrenadora de yoga.',
+      telefono: '699 112 233'
+    },
+    {
+      id: '34',
+      nombre: 'Fernando',
+      apellidos: 'García',
+      pop: 'imagen de valoracions',
+      img: 'img/fernando.png',
+      ultvezconectada: 'Hace 30 minutos',
+      ubi: 'A Coruña  Ciudad Vieja',
+      desc: 'Chef de cocina fusión y food blogger.',
+      telefono: '611 223 344'
+    },
+    {
+      id: '35',
+      nombre: 'Gabriela',
+      apellidos: 'Herrera',
+      pop: 'imagen de valoracions',
+      img: 'img/gabriela.png',
+      ultvezconectada: 'Hace 3 días',
+      ubi: 'Vigo  Casco Vello',
+      desc: 'Escritora de novelas de ciencia ficción.',
+      telefono: '622 334 455'
+    },
+    {
+      id: '36',
+      nombre: 'Héctor',
+      apellidos: 'Ruiz',
+      pop: 'imagen de valoracions',
+      img: 'img/hector.png',
+      ultvezconectada: 'En línea',
+      ubi: 'Alicante  Playa San Juan',
+      desc: 'Deportista y amante del senderismo.',
+      telefono: '633 445 566'
+    },
+    {
+      id: '37',
+      nombre: 'Irene',
+      apellidos: 'Castro',
+      pop: 'imagen de valoracions',
+      img: 'img/irene.png',
+      ultvezconectada: 'Hace 8 horas',
+      ubi: 'San Sebastián  Parte Vieja',
+      desc: 'Pianista y profesora de música clásica.',
+      telefono: '644 556 677'
+    },
+    {
+      id: '38',
+      nombre: 'Javier',
+      apellidos: 'Morales',
+      pop: 'imagen de valoracions',
+      img: 'img/javier.png',
+      ultvezconectada: 'Hace 1 día',
+      ubi: 'Pamplona  Casco Antiguo',
+      desc: 'Periodista y documentalista de viajes.',
+      telefono: '655 667 788'
+    }
   ]
 
   constructor() { }
@@ -338,8 +451,11 @@ export class ServicioService {
   }
 
   getServicioById(id: string, usuarias: string) {
-    if(usuarias === 'usuarias') 
-    return this.usuarias.find(servicio => servicio.id === id);
-    else return;
+    if(usuarias === 'usuarias') {
+      return this.usuarias.find(servicio => servicio.id === id);
+    } else if (usuarias === 'usuarias2') {
+      return this.usuarias2.find(servicio => servicio.id === id);
+    }
+    return null;
   }
 }

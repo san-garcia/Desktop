@@ -11,7 +11,7 @@ import { ArtistasServiceService } from '../services/artistas-service.service';
 })
 
 export class ArtistasComponent {
-<<<<<<< HEAD
+
  artistas = [
     { id: 'jesica', nombre: 'Jesica', especilidad: 'Especializada en: Tradicional a color/negro y blackwork', imagen: 'artistas/jessica.jpg', ig: 'jesica_36'},
     { id: 'ana', nombre: 'Ana', especilidad: 'Especializada en: Microrealismo, Fineline y Blackwork', imagen: 'artistas/ana.jpg', ig: 'anaplaza.tattoo'},
@@ -22,7 +22,7 @@ export class ArtistasComponent {
     { id: 'chaky', nombre: 'Chaky', especilidad: 'Especializado en: Lettering, Graffiti y Blackwork', imagen: 'artistas/chaky.jpg', ig: 'chakytattoo'},
     { id: 'jan', nombre: 'Jan', especilidad: 'Especializado en: Black n Gray, Geometría y Fine line', imagen: 'artistas/jan.jpg', ig: 'jan_soloink'}
  ]
-=======
+
  busquedas: any[] = [];
 
  constructor(private artistasService: ArtistasServiceService) {}
@@ -31,5 +31,4 @@ export class ArtistasComponent {
   this.busquedas = this.artistasService.getArtistas();
   
  }
->>>>>>> 1f3d501b45f7aec881f1cb02485065fcc98a9c0e
 }
