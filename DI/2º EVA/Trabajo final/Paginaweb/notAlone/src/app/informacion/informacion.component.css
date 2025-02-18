@@ -1,0 +1,111 @@
+.contenido {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f8f9ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a3cc1;
+    margin-bottom: 20px;
+}
+
+.preguntas {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.preguntas h2 {
+    font-size: 22px;
+    color: #5a3cc1;
+    margin-bottom: 10px;
+}
+
+.preguntas p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacto {
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 30px 40px; 
+    background-color: #edeeff;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #805bd1;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px; 
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    background: white;
+}
+
+input:focus, textarea {
+    border-color: #7450e5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.6);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #7968f5;
+    color: #edeeff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #8677f5
+}

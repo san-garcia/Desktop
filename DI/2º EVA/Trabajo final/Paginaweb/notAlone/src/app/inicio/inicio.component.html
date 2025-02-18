@@ -7,7 +7,7 @@
 
         <!-- Descripción del producto -->
         <div class="columna">
-            <h1>Not Alone</h1>
+            <h1 class="titulo">Not Alone</h1>
             <h2>Ya nunca más volverás a ir sola</h2>
             <p>La nueva aplicación que te acompaña, para que el viaje a casa no sea extraña</p>
             <p>Aplicación para ayuntamientos e instituciones orientada a la protección y seguridad de la mujer. Grupos específicos, en tu móvil, para una mayor protección.</p>
@@ -17,14 +17,22 @@
 
         <!-- Logo de la aplicación -->
         <div class="columna">
-            <img src="img/logo.png" alt="logo" class="logo">
+            <img src="img/logo-app.png" alt="logo" class="logo">
         </div>
 
         <!-- Posibles descargas que se pueda instalar -->
         <div class="columna">
-            Descarga la App Not Alone y registrare facilitado así a mujeres que se sientan vulnerables al ir solas por la calle o que tengan algún peligro
-            y así poder acceder a la información compartida en un entorno seguro para la mujer.
+            <p class="parrafo-logo">Descarga la App Not Alone y registrare facilitado así a mujeres que se sientan vulnerables al ir solas por la calle o que tengan algún peligro
+                y así poder acceder a la información compartida en un entorno seguro para la mujer.</p>
             <!-- Botones para poder descargarse la aplicación en Android y IOS -->
+            <div class="botones-descargas">
+                <a href="https://play.google.com/store/games?hl=es_419&pli=1" class="play-store">
+                    <img src="img/playstore.png" alt="Google Play">
+                </a>
+                <a href="https://www.apple.com/es/app-store/" class="app-store">
+                    <img src="img/appstore.png" alt="App Store">
+                </a>
+            </div>            
         </div>
     </div>
 </div>
@@ -72,7 +80,7 @@
                 <p>Sofía</p>
                 <p>Valoracion de la app:</p>
                 <img src="img/valoracion.png" alt="valoracion">
-                <p>"Estoy orgullosa de poder ayudar a otras mujeres a que lleguen bien a su hogar"</p>
+                <p>"Estoy orgullosa de poder ayudar a otras mujeres a que lleguen bien a su hogar sin ningún tipo de problema"</p>
             </div>
         </div>
 
@@ -82,7 +90,7 @@
                 <p>Valeria</p>
                 <p>Valoracion de la app: </p>
                 <img src="img/valoracion.png" alt="valoracion">
-                <p>"Ahora me siento más segura al tenerla y saber que tengo alguien conmigo"</p>
+                <p>"Ahora me siento más segura al tenerla y saber que tengo alguien conmigo a la vuelta de casa"</p>
             </div>
         </div>
 
@@ -92,7 +100,7 @@
                 <p>Lucas</p>
                 <p>Valoracion de la app: </p>
                 <img src="img/valoracion.png" alt="valoracion">
-                <p>"A pesar de ser una app orientada a muejeres, me alegra que yo pueda contribuir y que todas se sientan seguras"</p>
+                <p>"A pesar de ser una app orientada para mujeres, me alegra que yo pueda contribuir y que todas se sientan seguras al poder hablar conmigo"</p>
             </div>
         </div>
 
@@ -102,12 +110,12 @@
                 <p>Natalia</p>
                 <p>Valoracion de la app: </p>
                 <img src="img/valoracion.png" alt="valoracion">
-                <p>"Llevo más de un año con ella y no me ha dado ningun tipo de problema, la recomiendo para todo el mundo"</p>
+                <p>"Llevo más de un año con ella y no me ha dado ningun tipo de problema, es sencilla y fácil de usar, la recomiendo para todo el mundo"</p>
             </div>
         </div>
     </div>
     <!-- Botón que redirijirá a la seccion de usuarias o saber más sobre la opinión de ellas-->
-    <button class="boton">Saber más</button>
+    <button class="boton-sabermas" [routerLink]="['../informacion']">Saber más</button>
 
 </div>
 
@@ -128,11 +136,8 @@
                o no responder al mensaje de seguridad, se podrá localizar el dispositivo móvil,
                y activar el protocolo de búsqueda de la usuaria. En caso de que se responda, se 
                desactivará dicho protocolo.</p>
-
             <p>Con esta opción activada, agilizará el proceso de búsqueda en los momentos iniciales</p>   
-        
             <p>Tener activada o no esta opción es totalmente opcional de cada usuaria</p>
-        
         </div>
     </div>
 </div>
@@ -216,6 +221,20 @@
         <p>Si tienes alguna duda sobre la app, no dudes en ponerte contacto con nosotras</p>
         <p>Sea lo que sea estamos aquí para ayudarte</p>
     </div>
+    <section class="contacto">
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+    
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="Escribe tu correo" required>
+    
+            <label for="mensaje">Tu mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu duda aquí" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     
 </div>
 

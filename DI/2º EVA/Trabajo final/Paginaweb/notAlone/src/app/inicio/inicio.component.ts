@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
@@ -14,7 +15,7 @@ export class InicioComponent {
     {
       pregunta: '¿Cuál es el funcionamiento de la aplicación?',
       respuesta: 'Esta aplicación te sirve para cuando tengas una situación incómoda o peligrosa al ir sola por la calle, es posible poder interactuar con otras mujeres, ya sea cerca o lejos de tu misma situación.',
-      mostrar: false
+      mostrar: true
     },
 
     {
@@ -56,6 +57,54 @@ export class InicioComponent {
     {
       pregunta: '¿Es necesario registarme en la aplicación para así usarla?',
       respuesta: 'Si, es totalmente necesario, sin esto no se podrá a llegar a usar la aplicación correctamente',
+      mostrar: false
+    }, 
+
+    {
+      pregunta: '¿Cómo puedo reportar a un usuario?',
+      respuesta: 'Si te encuentras con un usuario que infringe las normas de la comunidad o te hace sentir incómoda, puedes reportarlo desde su perfil. El equipo de moderación revisará la situación y tomará las medidas necesarias.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Puedo elegir con quién hablar?',
+      respuesta: 'Sí, puedes seleccionar con quién deseas interactuar. La aplicación te mostrará perfiles de mujeres con intereses similares, pero solo tú decides con quién iniciar una conversación.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Puedo ocultar mi ubicación?',
+      respuesta: 'Sí, puedes gestionar la visibilidad de tu ubicación desde la configuración de la aplicación. Sin embargo, algunas funciones pueden verse limitadas si decides ocultarla.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Qué hago si me encuentro en una situación de emergencia?',
+      respuesta: 'Si estás en una situación de emergencia, puedes presionar el botón de emergencia en la aplicación. Este notificará a las autoridades y, si lo tienes configurado, también enviará una alerta a tus contactos de confianza.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Cómo garantizan la seguridad de las usuarias?',
+      respuesta: 'La seguridad es nuestra prioridad. Implementamos procesos de verificación de usuarios, encriptación de mensajes y un sistema de reportes para asegurar un espacio seguro para todas.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Puedo personalizar mi perfil?',
+      respuesta: 'Sí, puedes agregar una foto, una breve descripción y seleccionar intereses para que otras usuarias puedan conocerte mejor.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿Qué datos personales son visibles para otras usuarias?',
+      respuesta: 'Solo la información que decides compartir en tu perfil es visible para otras usuarias. Tu número de teléfono y otros datos sensibles permanecen privados.',
+      mostrar: false
+    },
+
+    {
+      pregunta: '¿La aplicación está disponible en otros países?',
+      respuesta: 'Sí, la aplicación puede usarse en varios países. Sin embargo, la cantidad de usuarias disponibles cerca de ti dependerá de la popularidad en tu región.',
       mostrar: false
     }
   ]

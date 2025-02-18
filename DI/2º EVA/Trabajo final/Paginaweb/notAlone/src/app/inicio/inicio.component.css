@@ -1,6 +1,6 @@
 .inicio {
     padding: 40px 20px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     display: flex;
     justify-content: center;
@@ -27,6 +27,42 @@
 .columna h3 {
     color: #444;
     font-size: 16px;
+}
+
+.parrafo-logo {
+    margin-top: 70px;
+    font-size: 16px;
+}
+
+.titulo {
+    font-family: "Georgia", serif;
+}
+
+.botones-descargas {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.botones-descargas a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.botones-descargas img {
+    width: 35px;
+    height: 35px;
+}
+
+.botones-descargas a:hover {
+    transform: scale(1.05);
 }
 
 .secciones {
@@ -76,7 +112,7 @@
 }
 
 .boton {
-    background: linear-gradient(45deg, #7968f5, #f6a1b2);
+    background: linear-gradient(45deg, #7968f5, #baa1f4);
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -85,6 +121,22 @@
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.boton-sabermas {
+    background: linear-gradient(45deg, #7968f5, #baa1f4);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+}
+.boton-sabermas:hover {
+    transform: scale(1.1);
 }
 
 .boton:hover {
@@ -96,19 +148,19 @@
 }
 
 .bandera {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Sin bordes */
+    background-color: transparent; 
+    border: none; 
     cursor: pointer;
     padding: 5px;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px; 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .bandera img {
-    width: 90px; /* Ajusta el tamaño de la imagen */
+    width: 90px;
     height: auto;
     display: block;
-    border-radius: 5px; /* Opcional, si la imagen necesita esquinas redondeadas */
+    border-radius: 5px; 
 }
 
 .bandera:hover {
@@ -122,8 +174,75 @@
 
 .botones-desplegables {
     display: flex;
-    flex-direction: column; /* Esto asegura que los botones estén uno debajo del otro */
-    gap: 10px; /* Espaciado entre los botones */
-    align-items: center; /* Opcional: centrar los botones */
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center; 
     margin-top: 20px;
+}
+
+.contacto {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacto {
+    max-width: 600px; 
+    margin: 50px auto;
+    padding: 30px 40px; 
+    background-color: #edeeff;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #805bd1;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px; 
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #7968f5;
+    color: #edeeff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #8677f5
 }
