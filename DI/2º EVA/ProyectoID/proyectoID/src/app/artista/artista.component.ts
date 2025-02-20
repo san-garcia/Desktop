@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
 import { ArtistasServiceService } from '../services/artistas-service.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './artista.component.css'
 })
 
-export class ArtistaComponent implements OnInit {
+export class ArtistasComponent implements OnInit {
   artistaSeleccionado: any;
 
   artistas = {
@@ -174,9 +173,9 @@ export class ArtistaComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const id = params.get('id');
-      /*this.artistaSeleccionado = this.artistas[id ?? 'jesica'];*/
     });
   }
+}
 
 export class ArtistaComponent {
   busqueda: any;
